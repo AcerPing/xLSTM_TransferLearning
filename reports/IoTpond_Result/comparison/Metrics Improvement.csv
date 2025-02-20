@@ -1,0 +1,19 @@
+,FishAquaponics_IoTpond1 (FishAquaponics_IoTpond2),FishAquaponics_IoTpond1 (FishAquaponics_IoTpond3),FishAquaponics_IoTpond1 (FishAquaponics_IoTpond4)
+Transferred MAE,0.051257,0.095521,0.07265
+Baseline MAE,0.114809,0.114809,0.114809
+MAE Improvement,55.35%,16.80%,36.72%
+Transferred MSE,0.005307,0.018368,0.014893
+Baseline MSE,0.021133,0.021133,0.021133
+MSE Improvement,74.89%,13.08%,29.53%
+Transferred RMSE,0.072846,0.13553,0.122036
+Baseline RMSE,0.145372,0.145372,0.145372
+RMSE Improvement,49.89%,6.77%,16.05%
+Transferred MAPE,67.066465,60.453097,74.855517
+Baseline MAPE,57.313867,57.313867,57.313867
+MAPE Improvement,-17.02%,-5.48%,-30.61%
+Transferred MSLE,0.023682,0.027272,0.026485
+Baseline MSLE,0.026209,0.026209,0.026209
+MSLE Improvement,9.64%,-4.06%,-1.05%
+Transferred R2,0.798119,0.301201,0.43343
+Baseline R2,0.196025,0.196025,0.196025
+R2 Improvement,0.602094,0.105176,0.237405

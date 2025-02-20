@@ -1,0 +1,7 @@
+【Aquaponics Pond Dataset 魚菜共生資料集】
+1.) Cleaned Aquaponics Pond Dataset
+https://www.kaggle.com/datasets/ahgamer7789/cleaned-aquaponics-pond-dataset/data
+2.) Cleaned Aquaponics Pond Dataset
+https://www.kaggle.com/datasets/samahfetouh/cleaned-aquaponics-pond-dataset/data
+3.) Sensor Based Aquaponics Fish Pond Datasets
+https://www.kaggle.com/datasets/ogbuokiriblessing/sensor-based-aquaponics-fish-pond-datasets/data

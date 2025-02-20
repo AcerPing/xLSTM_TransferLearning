@@ -1,0 +1,15 @@
+ python main.py  --out-dir IoTpond_Result --seed 1234 --train-ratio 0.8 --time-window 1000 --train-mode pre-train --gpu --nb-epochs 100 --nb-batch 30 --train-verbose 1
+ python main.py  --out-dir result --seed 1234 --train-ratio 0.8 --time-window 1000 --train-mode transfer-learning --gpu --nb-epochs 100 --nb-batch 20 --train-verbose 1
+ python main.py  --out-dir result --seed 1234 --train-ratio 0.8 --time-window 1000 --train-mode without-transfer-learning --gpu --nb-epochs 100 --nb-batch 20 --train-verbose 1
+ python main.py --out-dir result --seed 1234 --train-ratio 0.8 --time-window 1000 --train-mode bagging --gpu --nb-epochs 100 --nb-batch 20 --train-verbose 1
+ python main.py --out-dir result --seed 1234 --train-ratio 0.8 --time-window 1000 --train-mode comparison --gpu --nb-epochs 100 --nb-batch 20 --train-verbose 1
+ 
+ ---------------------------------
+ 
+  python main.py  --out-dir IoTpond_Result --seed 1234 --train-mode pre-train --gpu --nb-epochs 200 --nb-batch 100
+  python main.py  --out-dir IoTpond_Result --seed 1234 --train-mode without-transfer-learning --gpu --nb-epochs 200 --nb-batch 100 
+  python main.py --out-dir IoTpond_Result --seed 1234 --train-mode transfer-learning --gpu --nb-epochs 200 --nb-batch 100
+  python main.py --out-dir IoTpond_Result --seed 1234 --train-mode transfer-learning --gpu --nb-epochs 200 --nb-batch 100 --freeze
+  
+  python main.py --out-dir IoTpond_Result --seed 1234 --train-ratio 0.8 --time-window 1000 --train-mode comparison --gpu --nb-epochs 100 --nb-batch 20 --train-verbose 1
+  

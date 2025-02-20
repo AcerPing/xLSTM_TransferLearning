@@ -1,0 +1,3 @@
+args["nb_batch"]: 50；batch_size: 133
+初始學習率: 1e-05
+優化器參數: {'learning_rate': 9.999999747378752e-06, 'beta_1': 0.8999999761581421, 'beta_2': 0.9990000128746033, 'decay': 0.0, 'epsilon': 1e-07, 'amsgrad': False}

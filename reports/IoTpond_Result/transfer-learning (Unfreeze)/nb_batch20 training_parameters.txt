@@ -1,0 +1,28 @@
+
+[2024-12-17 23:24:08]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 20
+Batch Size (bsize): 333
+Sequence Length (period): 1440
+
+[2024-12-17 23:37:15]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 20
+Batch Size (bsize): 333
+Sequence Length (period): 1440
+
+[2024-12-17 23:48:21]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 20
+Batch Size (bsize): 333
+Sequence Length (period): 1440
+
+[2024-12-18 00:31:58]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 20
+Batch Size (bsize): 333
+Sequence Length (period): 1440

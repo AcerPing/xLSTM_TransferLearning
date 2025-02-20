@@ -1,0 +1,63 @@
+
+[name: "/device:CPU:0"
+device_type: "CPU"
+memory_limit: 268435456
+locality {
+}
+incarnation: 15023337350629441053
+, name: "/device:XLA_CPU:0"
+device_type: "XLA_CPU"
+memory_limit: 17179869184
+locality {
+}
+incarnation: 3038410030829308041
+physical_device_desc: "device: XLA_CPU device"
+, name: "/device:GPU:0"
+device_type: "GPU"
+memory_limit: 5054136320
+locality {
+  bus_id: 1
+  links {
+  }
+}
+incarnation: 12345262969371166904
+physical_device_desc: "device: 0, name: NVIDIA GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5"
+, name: "/device:XLA_GPU:0"
+device_type: "XLA_GPU"
+memory_limit: 17179869184
+locality {
+}
+incarnation: 13761596545193365400
+physical_device_desc: "device: XLA_GPU device"
+]
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+/device:CPU:0
+設備名稱：/device:CPU:0
+設備類型：CPU
+記憶體上限：268435456 bytes（約 256 MB）
+說明：這是系統的主 CPU，TensorFlow 可用於執行計算操作。
+
+/device:XLA_CPU:0
+設備名稱：/device:XLA_CPU:0
+設備類型：XLA_CPU
+記憶體上限：17179869184 bytes（約 16 GB）
+說明：這是使用 XLA（加速線性代數）編譯器的 CPU 計算設備。XLA 是 TensorFlow 的一個編譯器，可加速部分運算。
+
+/device:GPU:0
+設備名稱：/device:GPU:0
+設備類型：GPU
+記憶體上限：5054136320 bytes（約 5 GB）
+本地性：
+bus_id：1，標示該 GPU 在系統中的位置
+設備描述：NVIDIA GeForce RTX 2060，PCI bus id 為 0000:01:00.0，計算能力為 7.5。
+說明：這是主 GPU 設備，提供硬體加速，適合 TensorFlow 等深度學習應用。
+
+ /device:XLA_GPU:0
+設備名稱：/device:XLA_GPU:0
+設備類型：XLA_GPU
+記憶體上限：17179869184 bytes（約 16 GB）
+說明：這是使用 XLA 的 GPU 計算設備。
+

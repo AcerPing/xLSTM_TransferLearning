@@ -1,0 +1,154 @@
+
+[2024-12-16 11:57:47]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-16 13:14:47]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-16 13:28:42]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-17 13:45:26]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-17 13:58:42]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-17 14:05:35]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-17 14:13:04]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-17 14:19:33]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-17 14:25:32]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-17 14:37:38]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-17 14:48:17]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-17 14:57:32]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-17 15:12:20]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-17 15:17:47]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-17 15:34:41]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-19 20:30:07]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-19 20:48:19]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-19 21:35:19]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-19 22:10:37]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-21 00:30:54]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-21 01:54:25]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440
+
+[2024-12-21 02:26:35]
+訓練資料集 FishAquaponics_IoTpond1 時的參數：
+Data Size (data_size): 41726
+Number of Batches (args['nb_batch']): 100
+Batch Size (bsize): 66
+Sequence Length (period): 1440

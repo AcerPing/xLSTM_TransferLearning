@@ -1,0 +1,24 @@
+.vscode/
+# *.ipynb
+.ipynb_checkpoints
+*.swp
+._*
+.DS_Store
+node_modules
+release
+.sass-cache
+__pycache__/
+venv/
+
+# results
+# reports/result/noise-injection/
+job_archive/
+
+# job execution
+cluster_execution.sh
+
+--------------------------------------------
+
+transfer-learning-LSTM-master.zip
+df_kwh_adjusted.csv
+solar_AL.txt
