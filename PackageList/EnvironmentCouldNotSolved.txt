@@ -1,0 +1,2012 @@
+
+Could not solve for environment specs
+The following packages are incompatible
+├─ _tflow_select ==2.1.0 gpu is requested and can be installed;
+├─ absl-py ==0.9.0 py37_0 is installable with the potential options
+│  ├─ absl-py 0.9.0 would require
+│  │  └─ python >=3.7,<3.8.0a0  with the potential options
+│  │     ├─ python [2.7.13|2.7.14|...|3.8.2] would require
+│  │     │  └─ readline [7.* |7.0 |7.0.* |>=7.0,<8.0a0 ], which can be installed;
+│  │     ├─ python [3.7.1|3.7.2|3.7.3] would require
+│  │     │  ├─ readline >=7.0,<8.0a0 , which can be installed;
+│  │     │  └─ tk >=8.6.9,<8.7.0a0 , which can be installed;
+│  │     ├─ python 3.7.10 would require
+│  │     │  ├─ pypy3.7 7.3.4.* , which requires
+│  │     │  │  ├─ expat >=2.3.0,<3.0a0 , which can be installed;
+│  │     │  │  ├─ libffi >=3.3,<3.4.0a0 , which can be installed;
+│  │     │  │  └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│  │     │  └─ python_abi 3.7 *_pypy37_pp73, which can be installed;
+│  │     ├─ python 3.7.10 would require
+│  │     │  ├─ pypy3.7 7.3.5.*  with the potential options
+│  │     │  │  ├─ pypy3.7 [7.3.5|7.3.7] would require
+│  │     │  │  │  ├─ expat >=2.4.1,<3.0a0 , which can be installed;
+│  │     │  │  │  ├─ libffi >=3.4.2,<3.5.0a0 , which can be installed;
+│  │     │  │  │  └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│  │     │  │  └─ pypy3.7 7.3.5 would require
+│  │     │  │     ├─ expat >=2.4.1,<3.0a0 , which can be installed;
+│  │     │  │     ├─ libffi >=3.3,<3.4.0a0 , which can be installed;
+│  │     │  │     └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│  │     │  └─ python_abi 3.7 *_pypy37_pp73, which can be installed;
+│  │     ├─ python [3.10.0|3.10.1|...|3.9.9] would require
+│  │     │  ├─ readline >=8.1,<9.0a0 , which can be installed;
+│  │     │  └─ tk >=8.6.11,<8.7.0a0 , which can be installed;
+│  │     ├─ python [3.7.10|3.7.11|...|3.9.7] would require
+│  │     │  ├─ libffi >=3.3,<3.4.0a0 , which can be installed;
+│  │     │  └─ tk >=8.6.10,<8.7.0a0 , which can be installed;
+│  │     ├─ python 3.7.12 would require
+│  │     │  ├─ pypy3.7 7.3.7.*  with the potential options
+│  │     │  │  ├─ pypy3.7 [7.3.5|7.3.7], which can be installed (as previously explained);
+│  │     │  │  └─ pypy3.7 7.3.7 would require
+│  │     │  │     ├─ expat >=2.4.1,<3.0a0 , which can be installed;
+│  │     │  │     ├─ openssl >=3.0.0,<4.0a0 , which can be installed;
+│  │     │  │     └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│  │     │  └─ python_abi 3.7 *_pypy37_pp73, which can be installed;
+│  │     ├─ python 3.7.3 would require
+│  │     │  └─ tk >=8.6.9,<8.7.0a0 , which can be installed;
+│  │     ├─ python [3.7.3|3.7.6|3.7.8] would require
+│  │     │  └─ tk >=8.6.10,<8.7.0a0 , which can be installed;
+│  │     ├─ python [3.7.8|3.8.4|3.8.5|3.8.6] would require
+│  │     │  ├─ ld_impl_linux-64 >=2.34 , which can be installed;
+│  │     │  └─ tk >=8.6.10,<8.7.0a0 , which can be installed;
+│  │     ├─ python 3.7.9 would require
+│  │     │  ├─ pypy3.7 7.3.3.* , which requires
+│  │     │  │  ├─ expat >=2.2.9,<3.0.0a0 , which can be installed;
+│  │     │  │  └─ libffi >=3.3,<3.4.0a0 , which can be installed;
+│  │     │  └─ python_abi 3.7 *_pypy37_pp73, which can be installed;
+│  │     ├─ python [2.7.15|3.6.7|3.7.1] would require
+│  │     │  └─ openssl >=1.1.1,<1.1.2.0a0 , which does not exist (perhaps a missing channel);
+│  │     ├─ python [3.10.0|3.10.3|...|3.9.12] would require
+│  │     │  ├─ ncurses >=6.3,<7.0a0 , which can be installed;
+│  │     │  └─ tk >=8.6.11,<8.7.0a0 , which can be installed;
+│  │     ├─ python [3.10.6|3.10.8|...|3.9.16] would require
+│  │     │  ├─ ncurses >=6.3,<7.0a0 , which can be installed;
+│  │     │  └─ tk >=8.6.12,<8.7.0a0 , which can be installed;
+│  │     ├─ python 3.7.7, which can be installed;
+│  │     └─ python [2.7.18|3.5.6|...|3.8.3] would require
+│  │        └─ libffi >=3.3,<3.4.0a0 , which can be installed;
+│  └─ absl-py 0.9.0 would require
+│     ├─ python >=3.7,<3.8.0a0  with the potential options
+│     │  ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│     │  ├─ python [3.7.1|3.7.2|3.7.3], which can be installed (as previously explained);
+│     │  ├─ python 3.7.10, which can be installed (as previously explained);
+│     │  ├─ python 3.7.10, which can be installed (as previously explained);
+│     │  ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│     │  ├─ python [3.7.10|3.7.11|...|3.9.7], which can be installed (as previously explained);
+│     │  ├─ python 3.7.12, which can be installed (as previously explained);
+│     │  ├─ python 3.7.3, which can be installed (as previously explained);
+│     │  ├─ python [3.7.3|3.7.6|3.7.8], which can be installed (as previously explained);
+│     │  ├─ python [3.7.8|3.8.4|3.8.5|3.8.6], which can be installed (as previously explained);
+│     │  ├─ python 3.7.9, which can be installed (as previously explained);
+│     │  ├─ python [2.7.15|3.6.7|3.7.1], which cannot be installed (as previously explained);
+│     │  ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│     │  ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│     │  ├─ python 3.7.7, which can be installed;
+│     │  └─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+│     └─ python_abi * *_cp37m, which conflicts with any installable versions previously reported;
+├─ bleach ==4.1.0 pyhd3eb1b0_0 is requested and can be installed;
+├─ certifi ==2024.8.30 pyhd8ed1ab_0 is installable and it requires
+│  └─ python >=3.7  with the potential options
+│     ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│     ├─ python [3.7.1|3.7.2|3.7.3], which can be installed (as previously explained);
+│     ├─ python 3.7.10, which can be installed (as previously explained);
+│     ├─ python 3.7.10, which can be installed (as previously explained);
+│     ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│     ├─ python [3.7.10|3.7.11|...|3.9.7], which can be installed (as previously explained);
+│     ├─ python 3.7.12, which can be installed (as previously explained);
+│     ├─ python 3.7.3, which can be installed (as previously explained);
+│     ├─ python [3.7.3|3.7.6|3.7.8], which can be installed (as previously explained);
+│     ├─ python [3.7.8|3.8.4|3.8.5|3.8.6], which can be installed (as previously explained);
+│     ├─ python 3.7.9, which can be installed (as previously explained);
+│     ├─ python [2.7.15|3.6.7|3.7.1], which cannot be installed (as previously explained);
+│     ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│     ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│     ├─ python 3.7.7, which can be installed;
+│     ├─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+│     ├─ python 3.10.8 would require
+│     │  └─ python_abi 3.10.* *_graalpy230_310_native, which can be installed;
+│     ├─ python [3.10.13|3.10.14|...|3.9.21] would require
+│     │  ├─ readline >=8.2,<9.0a0 , which can be installed;
+│     │  └─ tk >=8.6.13,<8.7.0a0 , which can be installed;
+│     ├─ python [3.10.2|3.10.4|3.8.13|3.9.12|3.9.13] would require
+│     │  ├─ readline >=8.1,<9.0a0 , which can be installed;
+│     │  └─ tk >=8.6.12,<8.7.0a0 , which can be installed;
+│     ├─ python [3.10.5|3.10.6|...|3.9.16] would require
+│     │  ├─ readline >=8.1.2,<9.0a0 , which can be installed;
+│     │  └─ tk >=8.6.12,<8.7.0a0 , which can be installed;
+│     ├─ python [3.10.10|3.10.11|...|3.9.18] would require
+│     │  ├─ readline >=8.2,<9.0a0 , which can be installed;
+│     │  └─ tk >=8.6.12,<8.7.0a0 , which can be installed;
+│     ├─ python [3.10.0|3.8.12] would require
+│     │  ├─ libffi >=3.3,<3.4.0a0 , which can be installed;
+│     │  └─ tk >=8.6.11,<8.7.0a0 , which can be installed;
+│     ├─ python [3.10.10|3.10.11|...|3.9.18] would require
+│     │  ├─ ncurses >=6.4,<7.0a0 , which can be installed;
+│     │  └─ tk >=8.6.12,<8.7.0a0 , which can be installed;
+│     ├─ python [3.10.11|3.11.3|3.8.16|3.9.16] would require
+│     │  ├─ openssl >=3.0.8,<4.0a0 , which can be installed;
+│     │  └─ tk >=8.6.12,<8.7.0a0 , which can be installed;
+│     ├─ python [3.10.12|3.11.4|3.8.17|3.9.17] would require
+│     │  ├─ openssl >=3.0.9,<4.0a0 , which can be installed;
+│     │  └─ tk >=8.6.12,<8.7.0a0 , which can be installed;
+│     ├─ python [3.10.13|3.11.5|3.8.18|3.9.18] would require
+│     │  ├─ openssl >=3.0.10,<4.0a0 , which can be installed;
+│     │  └─ tk >=8.6.12,<8.7.0a0 , which can be installed;
+│     ├─ python [3.10.14|3.11.8|3.11.9|3.8.19|3.9.19] would require
+│     │  ├─ openssl >=3.0.13,<4.0a0 , which can be installed;
+│     │  └─ tk >=8.6.12,<8.7.0a0 , which can be installed;
+│     ├─ python [3.10.14|3.9.19] would require
+│     │  ├─ openssl >=3.0.13,<4.0a0 , which can be installed;
+│     │  └─ tk >=8.6.14,<8.7.0a0 , which can be installed;
+│     ├─ python [3.10.15|3.10.16|...|3.9.21] would require
+│     │  ├─ readline >=8.1.2,<9.0a0 , which can be installed;
+│     │  └─ tk >=8.6.14,<8.7.0a0 , which can be installed;
+│     ├─ python 3.8.0 would require
+│     │  ├─ python_abi * *_cp38, which can be installed;
+│     │  └─ tk >=8.6.9,<8.7.0a0 , which can be installed;
+│     ├─ python [3.8.0|3.8.1] would require
+│     │  ├─ python_abi * *_cp38, which can be installed;
+│     │  └─ tk >=8.6.10,<8.7.0a0 , which can be installed;
+│     ├─ python [3.8.10|3.9.5|3.9.6] would require
+│     │  ├─ readline >=8.1,<9.0a0 , which can be installed;
+│     │  └─ tk >=8.6.10,<8.7.0a0 , which can be installed;
+│     ├─ python 3.8.12 would require
+│     │  ├─ pypy3.8 7.3.8.*  with the potential options
+│     │  │  ├─ pypy3.8 7.3.8 would require
+│     │  │  │  ├─ expat >=2.4.7,<3.0a0 , which can be installed;
+│     │  │  │  ├─ ncurses >=6.3,<7.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│     │  │  ├─ pypy3.8 [7.3.8|7.3.9] would require
+│     │  │  │  ├─ expat >=2.4.8,<3.0a0 , which can be installed;
+│     │  │  │  ├─ ncurses >=6.3,<7.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│     │  │  ├─ pypy3.8 7.3.8 would require
+│     │  │  │  ├─ expat >=2.4.7,<3.0a0 , which can be installed;
+│     │  │  │  ├─ openssl >=3.0.2,<4.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│     │  │  └─ pypy3.8 [7.3.8|7.3.9] would require
+│     │  │     ├─ expat >=2.4.8,<3.0a0 , which can be installed;
+│     │  │     ├─ openssl >=3.0.2,<4.0a0 , which can be installed;
+│     │  │     └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│     │  └─ python_abi 3.8 *_pypy38_pp73, which can be installed;
+│     ├─ python 3.8.13 would require
+│     │  ├─ pypy3.8 7.3.9.*  with the potential options
+│     │  │  ├─ pypy3.8 [7.3.8|7.3.9], which can be installed (as previously explained);
+│     │  │  ├─ pypy3.8 [7.3.8|7.3.9], which can be installed (as previously explained);
+│     │  │  ├─ pypy3.8 7.3.9 would require
+│     │  │  │  ├─ expat >=2.4.9,<3.0a0 , which can be installed;
+│     │  │  │  ├─ openssl >=3.0.5,<4.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  │  ├─ pypy3.8 7.3.9 would require
+│     │  │  │  ├─ expat >=2.5.0,<3.0a0 , which can be installed;
+│     │  │  │  ├─ openssl >=3.0.5,<4.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  │  ├─ pypy3.8 7.3.9 would require
+│     │  │  │  ├─ expat >=2.4.8,<3.0a0 , which can be installed;
+│     │  │  │  ├─ ncurses >=6.3,<7.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0.0a0 , which can be installed;
+│     │  │  ├─ pypy3.8 7.3.9 would require
+│     │  │  │  ├─ expat >=2.4.8,<3.0a0 , which can be installed;
+│     │  │  │  ├─ openssl >=3.0.5,<4.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│     │  │  ├─ pypy3.8 7.3.9 would require
+│     │  │  │  ├─ expat >=2.4.8,<3.0a0 , which can be installed;
+│     │  │  │  ├─ openssl >=3.0.5,<4.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0.0a0 , which can be installed;
+│     │  │  ├─ pypy3.8 7.3.9 would require
+│     │  │  │  ├─ expat >=2.4.9,<3.0a0 , which can be installed;
+│     │  │  │  ├─ ncurses >=6.3,<7.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  │  ├─ pypy3.8 [7.3.11|7.3.9] would require
+│     │  │  │  ├─ expat >=2.5.0,<3.0a0 , which can be installed;
+│     │  │  │  ├─ ncurses >=6.3,<7.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  │  └─ pypy3.8 [7.3.11|7.3.9] would require
+│     │  │     ├─ expat >=2.5.0,<3.0a0 , which can be installed;
+│     │  │     ├─ openssl >=3.0.7,<4.0a0 , which can be installed;
+│     │  │     └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  └─ python_abi 3.8 *_pypy38_pp73, which can be installed;
+│     ├─ python [3.8.2|3.8.3] would require
+│     │  ├─ python_abi 3.8.* *_cp38, which can be installed;
+│     │  └─ tk >=8.6.10,<8.7.0a0 , which can be installed;
+│     ├─ python 3.8.16 would require
+│     │  ├─ pypy3.8 7.3.11.*  with the potential options
+│     │  │  ├─ pypy3.8 [7.3.11|7.3.9], which can be installed (as previously explained);
+│     │  │  ├─ pypy3.8 [7.3.11|7.3.9], which can be installed (as previously explained);
+│     │  │  ├─ pypy3.8 7.3.11 would require
+│     │  │  │  ├─ libexpat >=2.5.0,<3.0a0  with the potential options
+│     │  │  │  │  ├─ libexpat 2.5.0 would require
+│     │  │  │  │  │  └─ expat 2.5.0.* , which can be installed;
+│     │  │  │  │  ├─ libexpat 2.6.1 would require
+│     │  │  │  │  │  └─ expat 2.6.1.* , which can be installed;
+│     │  │  │  │  ├─ libexpat 2.6.2 would require
+│     │  │  │  │  │  └─ expat 2.6.2.* , which can be installed;
+│     │  │  │  │  ├─ libexpat 2.6.3 would require
+│     │  │  │  │  │  └─ expat 2.6.3.* , which can be installed;
+│     │  │  │  │  └─ libexpat 2.6.4 would require
+│     │  │  │  │     └─ expat 2.6.4.* , which can be installed;
+│     │  │  │  ├─ openssl >=3.1.0,<4.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  │  ├─ pypy3.8 7.3.11 would require
+│     │  │  │  ├─ openssl >=3.1.2,<4.0a0 , which can be installed;
+│     │  │  │  ├─ xorg-libx11 >=1.8.6,<2.0a0  with the potential options
+│     │  │  │  │  ├─ xorg-libx11 [1.8.10|1.8.11|1.8.9] would require
+│     │  │  │  │  │  └─ libxcb >=1.17.0,<2.0a0 , which can be installed;
+│     │  │  │  │  ├─ xorg-libx11 [1.8.6|1.8.7|1.8.9] would require
+│     │  │  │  │  │  └─ libxcb >=1.15,<1.16.0a0 , which can be installed;
+│     │  │  │  │  └─ xorg-libx11 1.8.9 would require
+│     │  │  │  │     └─ libxcb >=1.16,<2.0.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  │  └─ pypy3.8 7.3.11 would require
+│     │  │     ├─ openssl >=3.1.3,<4.0a0 , which can be installed;
+│     │  │     ├─ xorg-libx11 >=1.8.6,<2.0a0 , which can be installed (as previously explained);
+│     │  │     └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  └─ python_abi 3.8 *_pypy38_pp73, which can be installed;
+│     ├─ python 3.8.20 would require
+│     │  ├─ readline >=8.2,<9.0a0 , which can be installed;
+│     │  └─ xorg-libx11 >=1.8.9,<2.0a0 , which can be installed (as previously explained);
+│     ├─ python 3.8.5 would require
+│     │  └─ python_abi 3.8.* *_graalpy223_38_native, which can be installed;
+│     ├─ python 3.8.2 conflicts with any installable versions previously reported;
+│     ├─ python 3.9.0 would require
+│     │  ├─ python_abi 3.9.* *_cp39, which can be installed;
+│     │  └─ tk >=8.6.10,<8.7.0a0 , which can be installed;
+│     ├─ python 3.9.10 would require
+│     │  ├─ pypy3.9 7.3.8.*  with the potential options
+│     │  │  ├─ pypy3.9 7.3.8 would require
+│     │  │  │  ├─ expat >=2.4.7,<3.0a0 , which can be installed;
+│     │  │  │  ├─ ncurses >=6.3,<7.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│     │  │  ├─ pypy3.9 [7.3.8|7.3.9] would require
+│     │  │  │  ├─ expat >=2.4.8,<3.0a0 , which can be installed;
+│     │  │  │  ├─ ncurses >=6.3,<7.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│     │  │  ├─ pypy3.9 7.3.8 would require
+│     │  │  │  ├─ expat >=2.4.7,<3.0a0 , which can be installed;
+│     │  │  │  ├─ openssl >=3.0.2,<4.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│     │  │  └─ pypy3.9 [7.3.8|7.3.9] would require
+│     │  │     ├─ expat >=2.4.8,<3.0a0 , which can be installed;
+│     │  │     ├─ openssl >=3.0.2,<4.0a0 , which can be installed;
+│     │  │     └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│     │  └─ python_abi 3.9 *_pypy39_pp73, which can be installed;
+│     ├─ python 3.9.12 would require
+│     │  ├─ pypy3.9 7.3.9.*  with the potential options
+│     │  │  ├─ pypy3.9 [7.3.8|7.3.9], which can be installed (as previously explained);
+│     │  │  ├─ pypy3.9 [7.3.8|7.3.9], which can be installed (as previously explained);
+│     │  │  ├─ pypy3.9 7.3.9 would require
+│     │  │  │  ├─ expat >=2.4.8,<3.0a0 , which can be installed;
+│     │  │  │  ├─ ncurses >=6.3,<7.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0.0a0 , which can be installed;
+│     │  │  ├─ pypy3.9 7.3.9 would require
+│     │  │  │  ├─ expat >=2.4.9,<3.0a0 , which can be installed;
+│     │  │  │  ├─ ncurses >=6.3,<7.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  │  ├─ pypy3.9 [7.3.11|7.3.9] would require
+│     │  │  │  ├─ expat >=2.5.0,<3.0a0 , which can be installed;
+│     │  │  │  ├─ ncurses >=6.3,<7.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  │  ├─ pypy3.9 7.3.9 would require
+│     │  │  │  ├─ expat >=2.4.8,<3.0a0 , which can be installed;
+│     │  │  │  ├─ openssl >=3.0.5,<4.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.5,<6.0.0a0 , which can be installed;
+│     │  │  ├─ pypy3.9 7.3.9 would require
+│     │  │  │  ├─ expat >=2.4.8,<3.0a0 , which can be installed;
+│     │  │  │  ├─ openssl >=3.0.5,<4.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0.0a0 , which can be installed;
+│     │  │  ├─ pypy3.9 7.3.9 would require
+│     │  │  │  ├─ expat >=2.4.9,<3.0a0 , which can be installed;
+│     │  │  │  ├─ openssl >=3.0.5,<4.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  │  ├─ pypy3.9 7.3.9 would require
+│     │  │  │  ├─ expat >=2.5.0,<3.0a0 , which can be installed;
+│     │  │  │  ├─ openssl >=3.0.5,<4.0a0 , which can be installed;
+│     │  │  │  └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  │  └─ pypy3.9 [7.3.11|7.3.9] would require
+│     │  │     ├─ expat >=2.5.0,<3.0a0 , which can be installed;
+│     │  │     ├─ openssl >=3.0.7,<4.0a0 , which can be installed;
+│     │  │     └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  └─ python_abi 3.9 *_pypy39_pp73, which can be installed;
+│     ├─ python 3.9.16 would require
+│     │  ├─ pypy3.9 7.3.11.*  with the potential options
+│     │  │  ├─ pypy3.9 [7.3.11|7.3.9], which can be installed (as previously explained);
+│     │  │  ├─ pypy3.9 [7.3.11|7.3.9], which can be installed (as previously explained);
+│     │  │  └─ pypy3.9 7.3.11 would require
+│     │  │     ├─ libexpat >=2.5.0,<3.0a0 , which can be installed (as previously explained);
+│     │  │     ├─ openssl >=3.1.0,<4.0a0 , which can be installed;
+│     │  │     └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  └─ python_abi 3.9 *_pypy39_pp73, which can be installed;
+│     ├─ python 3.9.17 would require
+│     │  ├─ pypy3.9 7.3.12.*  with the potential options
+│     │  │  ├─ pypy3.9 7.3.12 would require
+│     │  │  │  ├─ openssl >=3.1.2,<4.0a0 , which can be installed;
+│     │  │  │  ├─ xorg-libx11 >=1.8.6,<2.0a0 , which can be installed (as previously explained);
+│     │  │  │  └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  │  └─ pypy3.9 [7.3.12|7.3.13] would require
+│     │  │     ├─ openssl >=3.1.3,<4.0a0 , which can be installed;
+│     │  │     ├─ xorg-libx11 >=1.8.6,<2.0a0 , which can be installed (as previously explained);
+│     │  │     └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  └─ python_abi 3.9 *_pypy39_pp73, which can be installed;
+│     ├─ python 3.9.18 would require
+│     │  ├─ pypy3.9 7.3.13.*  with the potential options
+│     │  │  ├─ pypy3.9 [7.3.12|7.3.13], which can be installed (as previously explained);
+│     │  │  └─ pypy3.9 7.3.13 would require
+│     │  │     ├─ openssl >=3.1.4,<4.0a0 , which can be installed;
+│     │  │     ├─ xorg-libx11 >=1.8.7,<2.0a0 , which can be installed (as previously explained);
+│     │  │     └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  └─ python_abi 3.9 *_pypy39_pp73, which can be installed;
+│     ├─ python 3.9.18 would require
+│     │  ├─ pypy3.9 7.3.15.* , which requires
+│     │  │  ├─ openssl >=3.2.1,<4.0a0 , which can be installed;
+│     │  │  ├─ xorg-libx11 >=1.8.7,<2.0a0 , which can be installed (as previously explained);
+│     │  │  └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │  └─ python_abi 3.9 *_pypy39_pp73, which can be installed;
+│     ├─ python [3.11.1|3.11.2|...|3.11.8] would require
+│     │  ├─ libexpat >=2.5.0,<3.0a0 , which can be installed (as previously explained);
+│     │  └─ readline >=8.2,<9.0a0 , which can be installed;
+│     ├─ python 3.11.10 would require
+│     │  ├─ libexpat >=2.6.3,<3.0a0 , which can be installed (as previously explained);
+│     │  └─ readline >=8.2,<9.0a0 , which can be installed;
+│     ├─ python 3.11.11 would require
+│     │  ├─ libexpat >=2.6.4,<3.0a0 , which can be installed (as previously explained);
+│     │  └─ readline >=8.2,<9.0a0 , which can be installed;
+│     ├─ python 3.11.9 would require
+│     │  ├─ libexpat >=2.6.2,<3.0a0 , which can be installed (as previously explained);
+│     │  └─ readline >=8.2,<9.0a0 , which can be installed;
+│     ├─ python 3.11.7 would require
+│     │  ├─ openssl >=3.0.12,<4.0a0 , which can be installed;
+│     │  └─ tk >=8.6.12,<8.7.0a0 , which can be installed;
+│     ├─ python [3.12.0|3.12.1|...|3.12.9] would require
+│     │  └─ readline >=8.2,<9.0a0 , which can be installed;
+│     ├─ python [3.12.0rc3|3.13.0rc1|3.13.0rc2|3.13.0rc3] would require
+│     │  └─ _python_rc, which does not exist (perhaps a missing channel);
+│     ├─ python [3.13.0|3.13.1|3.13.2] would require
+│     │  ├─ python_abi 3.13.* *_cp313t, which can be installed;
+│     │  └─ readline >=8.2,<9.0a0 , which can be installed;
+│     ├─ python [3.13.0|3.13.1|3.13.2] would require
+│     │  ├─ python_abi 3.13.* *_cp313, which can be installed;
+│     │  └─ readline >=8.2,<9.0a0 , which can be installed;
+│     ├─ python 3.12.0 would require
+│     │  └─ openssl >=3.0.11,<4.0a0 , which can be installed;
+│     ├─ python 3.12.1 would require
+│     │  └─ openssl >=3.0.12,<4.0a0 , which can be installed;
+│     ├─ python [3.12.2|3.12.3] would require
+│     │  └─ openssl >=3.0.13,<4.0a0 , which can be installed;
+│     ├─ python [3.12.4|3.12.5|...|3.12.9] would require
+│     │  └─ readline >=8.1.2,<9.0a0 , which can be installed;
+│     └─ python [3.13.0|3.13.1|3.13.2] would require
+│        ├─ python_abi * *_cp313, which can be installed;
+│        └─ readline >=8.1.2,<9.0a0 , which can be installed;
+├─ cudatoolkit ==10.0.130 0 is requested and can be installed;
+├─ cudnn ==7.6.5 cuda10.0_0 is requested and can be installed;
+├─ expat ==2.2.6 he6710b0_0 is not installable because it conflicts with any installable versions previously reported;
+├─ gast ==0.3.3 py_0 is requested and can be installed;
+├─ icu ==58.2 h9c2bf20_1 is requested and can be installed;
+├─ keras ==2.3.1 0 is installable and it requires
+│  └─ tensorflow with the potential options
+│     ├─ tensorflow 2.10.0 would require
+│     │  ├─ python_abi 3.10.* *_cp310, which can be installed;
+│     │  └─ tensorflow-base 2.10.0 cuda112py310hf679b68_0, which requires
+│     │     ├─ icu >=70.1,<71.0a0 , which conflicts with any installable versions previously reported;
+│     │     ├─ libcurl >=7.83.1,<9.0a0  with the potential options
+│     │     │  ├─ libcurl [7.81.0|7.82.0|...|8.9.1] would require
+│     │     │  │  └─ krb5 [>=1.19.2,<1.20.0a0 |>=1.19.3,<1.20.0a0 |...|>=1.21.3,<1.22.0a0 ] with the potential options
+│     │     │  │     ├─ krb5 [1.19.2|1.19.3|...|1.21.3] would require
+│     │     │  │     │  └─ libedit >=3.1.20191231,<3.2.0a0 , which can be installed;
+│     │     │  │     ├─ krb5 1.19.2 would require
+│     │     │  │     │  └─ libedit >=3.1.20210216,<3.2.0a0 , which can be installed;
+│     │     │  │     └─ krb5 [1.19.4|1.20.1|1.21.3] would require
+│     │     │  │        └─ libedit >=3.1.20221030,<3.2.0a0 , which can be installed;
+│     │     │  └─ libcurl [7.88.1|8.1.1] would require
+│     │     │     └─ krb5 >=1.19.4,<1.20.0a0 , which can be installed (as previously explained);
+│     │     ├─ libprotobuf >=3.21.5,<3.22.0a0 , which can be installed;
+│     │     └─ numpy >=1.21.6,<2.0a0  with the potential options
+│     │        ├─ numpy [1.20.3|1.21.0|...|1.26.4] would require
+│     │        │  └─ numpy-base <0a0 , which can be installed;
+│     │        ├─ numpy [1.21.5|1.21.6|...|1.24.1] would require
+│     │        │  ├─ pypy3.8 >=7.3.9 , which can be installed (as previously explained);
+│     │        │  └─ pypy3.9 >=7.3.9  with the potential options
+│     │        │     ├─ pypy3.9 [7.3.8|7.3.9], which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 [7.3.8|7.3.9], which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 7.3.9, which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 7.3.9, which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 [7.3.11|7.3.9], which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 7.3.9, which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 7.3.9, which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 7.3.9, which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 7.3.9, which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 [7.3.11|7.3.9], which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 7.3.11, which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 7.3.12, which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 [7.3.12|7.3.13], which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 7.3.13, which can be installed (as previously explained);
+│     │        │     ├─ pypy3.9 7.3.15, which can be installed (as previously explained);
+│     │        │     └─ pypy3.9 7.3.16 would require
+│     │        │        ├─ xorg-libx11 >=1.8.9,<2.0a0 , which can be installed (as previously explained);
+│     │        │        └─ xz >=5.2.6,<6.0a0 , which can be installed;
+│     │        ├─ numpy [1.24.2|1.24.3|...|1.25.2] would require
+│     │        │  ├─ pypy3.8 >=7.3.11 , which can be installed (as previously explained);
+│     │        │  └─ pypy3.9 >=7.3.11 , which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0 would require
+│     │        │  └─ pypy3.9 >=7.3.12 , which can be installed (as previously explained);
+│     │        ├─ numpy [1.26.2|1.26.3] would require
+│     │        │  └─ pypy3.9 >=7.3.13 , which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4 would require
+│     │        │  └─ pypy3.9 >=7.3.15 , which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6 would require
+│     │        │  └─ numpy-base 1.21.6 py310hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.21.6 would require
+│     │        │  └─ numpy-base 1.21.6 py310hb5e798b_1, which can be installed;
+│     │        ├─ numpy 1.21.6 would require
+│     │        │  └─ numpy-base 1.21.6 py310h375b286_0, which can be installed;
+│     │        ├─ numpy 1.21.6 would require
+│     │        │  └─ numpy-base 1.21.6 py310h375b286_1, which can be installed;
+│     │        ├─ numpy 1.21.6 would require
+│     │        │  └─ numpy-base 1.21.6 py38hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.21.6 would require
+│     │        │  └─ numpy-base 1.21.6 py38hb5e798b_1, which can be installed;
+│     │        ├─ numpy 1.21.6 would require
+│     │        │  └─ numpy-base 1.21.6 py38h375b286_0, which can be installed;
+│     │        ├─ numpy 1.21.6 would require
+│     │        │  └─ numpy-base 1.21.6 py38h375b286_1, which can be installed;
+│     │        ├─ numpy 1.21.6 would require
+│     │        │  └─ numpy-base 1.21.6 py39hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.21.6 would require
+│     │        │  └─ numpy-base 1.21.6 py39hb5e798b_1, which can be installed;
+│     │        ├─ numpy 1.21.6 would require
+│     │        │  └─ numpy-base 1.21.6 py39h375b286_0, which can be installed;
+│     │        ├─ numpy 1.21.6 would require
+│     │        │  └─ numpy-base 1.21.6 py39h375b286_1, which can be installed;
+│     │        ├─ numpy 1.22.3 would require
+│     │        │  └─ numpy-base 1.22.3 py310hf2716ce_0, which can be installed;
+│     │        ├─ numpy 1.22.3 would require
+│     │        │  └─ numpy-base 1.22.3 py310hb5e798b_2, which can be installed;
+│     │        ├─ numpy 1.22.3 would require
+│     │        │  └─ numpy-base 1.22.3 py310h9585f30_0, which can be installed;
+│     │        ├─ numpy 1.22.3 would require
+│     │        │  └─ numpy-base 1.22.3 py311hc9e7d78_1, which can be installed;
+│     │        ├─ numpy 1.22.3 would require
+│     │        │  └─ numpy-base 1.22.3 py311h0ff3221_1, which can be installed;
+│     │        ├─ numpy 1.22.3 would require
+│     │        │  └─ numpy-base 1.22.3 py38hb8be1f0_0, which can be installed;
+│     │        ├─ numpy 1.22.3 would require
+│     │        │  └─ numpy-base 1.22.3 py38hf524024_0, which can be installed;
+│     │        ├─ numpy 1.22.3 would require
+│     │        │  └─ numpy-base 1.22.3 py38h060ed82_2, which can be installed;
+│     │        ├─ numpy 1.22.3 would require
+│     │        │  └─ numpy-base 1.22.3 py39hb8be1f0_0, which can be installed;
+│     │        ├─ numpy 1.22.3 would require
+│     │        │  └─ numpy-base 1.22.3 py39hf524024_0, which can be installed;
+│     │        ├─ numpy 1.22.3 would require
+│     │        │  └─ numpy-base 1.22.3 py39h060ed82_2, which can be installed;
+│     │        ├─ numpy 1.23.1 would require
+│     │        │  └─ numpy-base 1.23.1 py310hcba007f_0, which can be installed;
+│     │        ├─ numpy 1.23.1 would require
+│     │        │  └─ numpy-base 1.23.1 py310h375b286_0, which can be installed;
+│     │        ├─ numpy 1.23.1 would require
+│     │        │  └─ numpy-base 1.23.1 py38ha15fc14_0, which can be installed;
+│     │        ├─ numpy 1.23.1 would require
+│     │        │  └─ numpy-base 1.23.1 py38h1e6e340_0, which can be installed;
+│     │        ├─ numpy 1.23.1 would require
+│     │        │  └─ numpy-base 1.23.1 py39ha15fc14_0, which can be installed;
+│     │        ├─ numpy 1.23.1 would require
+│     │        │  └─ numpy-base 1.23.1 py39h1e6e340_0, which can be installed;
+│     │        ├─ numpy 1.23.3 would require
+│     │        │  └─ numpy-base 1.23.3 py310h375b286_0, which does not exist (perhaps a missing channel);
+│     │        ├─ numpy 1.23.3 would require
+│     │        │  └─ numpy-base 1.23.3 py310h375b286_1, which can be installed;
+│     │        ├─ numpy 1.23.3 would require
+│     │        │  └─ numpy-base 1.23.3 py310h8e6c178_0, which does not exist (perhaps a missing channel);
+│     │        ├─ numpy 1.23.3 would require
+│     │        │  └─ numpy-base 1.23.3 py310h8e6c178_1, which can be installed;
+│     │        ├─ numpy 1.23.3 would require
+│     │        │  └─ numpy-base 1.23.3 py38h31eccc5_0, which can be installed;
+│     │        ├─ numpy 1.23.3 would require
+│     │        │  └─ numpy-base 1.23.3 py38h31eccc5_1, which can be installed;
+│     │        ├─ numpy 1.23.3 would require
+│     │        │  └─ numpy-base 1.23.3 py38h1e6e340_0, which can be installed;
+│     │        ├─ numpy 1.23.3 would require
+│     │        │  └─ numpy-base 1.23.3 py38h1e6e340_1, which can be installed;
+│     │        ├─ numpy 1.23.3 would require
+│     │        │  └─ numpy-base 1.23.3 py39h31eccc5_0, which can be installed;
+│     │        ├─ numpy 1.23.3 would require
+│     │        │  └─ numpy-base 1.23.3 py39h31eccc5_1, which can be installed;
+│     │        ├─ numpy 1.23.3 would require
+│     │        │  └─ numpy-base 1.23.3 py39h1e6e340_0, which can be installed;
+│     │        ├─ numpy 1.23.3 would require
+│     │        │  └─ numpy-base 1.23.3 py39h1e6e340_1, which can be installed;
+│     │        ├─ numpy 1.23.4 would require
+│     │        │  └─ numpy-base 1.23.4 py310h375b286_0, which can be installed;
+│     │        ├─ numpy 1.23.4 would require
+│     │        │  └─ numpy-base 1.23.4 py310h8e6c178_0, which can be installed;
+│     │        ├─ numpy 1.23.4 would require
+│     │        │  └─ numpy-base 1.23.4 py38h31eccc5_0, which can be installed;
+│     │        ├─ numpy 1.23.4 would require
+│     │        │  └─ numpy-base 1.23.4 py38h1e6e340_0, which can be installed;
+│     │        ├─ numpy 1.23.4 would require
+│     │        │  └─ numpy-base 1.23.4 py39h31eccc5_0, which can be installed;
+│     │        ├─ numpy 1.23.4 would require
+│     │        │  └─ numpy-base 1.23.4 py39h1e6e340_0, which can be installed;
+│     │        ├─ numpy 1.23.5 would require
+│     │        │  └─ numpy-base 1.23.5 py310hb5e798b_1, which can be installed;
+│     │        ├─ numpy 1.23.5 would require
+│     │        │  └─ numpy-base 1.23.5 py310h375b286_0, which can be installed;
+│     │        ├─ numpy 1.23.5 would require
+│     │        │  └─ numpy-base 1.23.5 py310h8e6c178_0, which can be installed;
+│     │        ├─ numpy 1.23.5 would require
+│     │        │  └─ numpy-base 1.23.5 py311hf175353_1, which can be installed;
+│     │        ├─ numpy 1.23.5 would require
+│     │        │  └─ numpy-base 1.23.5 py311hc9e7d78_0, which can be installed;
+│     │        ├─ numpy 1.23.5 would require
+│     │        │  └─ numpy-base 1.23.5 py311h0ff3221_0, which can be installed;
+│     │        ├─ numpy 1.23.5 would require
+│     │        │  └─ numpy-base 1.23.5 py38h31eccc5_0, which can be installed;
+│     │        ├─ numpy 1.23.5 would require
+│     │        │  └─ numpy-base 1.23.5 py38h060ed82_1, which can be installed;
+│     │        ├─ numpy 1.23.5 would require
+│     │        │  └─ numpy-base 1.23.5 py38h1e6e340_0, which can be installed;
+│     │        ├─ numpy 1.23.5 would require
+│     │        │  └─ numpy-base 1.23.5 py39h31eccc5_0, which can be installed;
+│     │        ├─ numpy 1.23.5 would require
+│     │        │  └─ numpy-base 1.23.5 py39h060ed82_1, which can be installed;
+│     │        ├─ numpy 1.23.5 would require
+│     │        │  └─ numpy-base 1.23.5 py39h1e6e340_0, which can be installed;
+│     │        ├─ numpy 1.24.3 would require
+│     │        │  └─ numpy-base 1.24.3 py310hb5e798b_1, which can be installed;
+│     │        ├─ numpy 1.24.3 would require
+│     │        │  └─ numpy-base 1.24.3 py310h375b286_0, which can be installed;
+│     │        ├─ numpy 1.24.3 would require
+│     │        │  └─ numpy-base 1.24.3 py310h8e6c178_0, which can be installed;
+│     │        ├─ numpy 1.24.3 would require
+│     │        │  └─ numpy-base 1.24.3 py311hf175353_1, which can be installed;
+│     │        ├─ numpy 1.24.3 would require
+│     │        │  └─ numpy-base 1.24.3 py311h4367d22_0, which can be installed;
+│     │        ├─ numpy 1.24.3 would require
+│     │        │  └─ numpy-base 1.24.3 py311hfd5febd_0, which can be installed;
+│     │        ├─ numpy 1.24.3 would require
+│     │        │  └─ numpy-base 1.24.3 py38h31eccc5_0, which can be installed;
+│     │        ├─ numpy 1.24.3 would require
+│     │        │  └─ numpy-base 1.24.3 py38h060ed82_1, which can be installed;
+│     │        ├─ numpy 1.24.3 would require
+│     │        │  └─ numpy-base 1.24.3 py38h1e6e340_0, which can be installed;
+│     │        ├─ numpy 1.24.3 would require
+│     │        │  └─ numpy-base 1.24.3 py39h31eccc5_0, which can be installed;
+│     │        ├─ numpy 1.24.3 would require
+│     │        │  └─ numpy-base 1.24.3 py39h060ed82_1, which can be installed;
+│     │        ├─ numpy 1.24.3 would require
+│     │        │  └─ numpy-base 1.24.3 py39h1e6e340_0, which can be installed;
+│     │        ├─ numpy 1.25.0 would require
+│     │        │  └─ numpy-base 1.25.0 py310hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.25.0 would require
+│     │        │  └─ numpy-base 1.25.0 py310h8a23956_0, which can be installed;
+│     │        ├─ numpy 1.25.0 would require
+│     │        │  └─ numpy-base 1.25.0 py311hf175353_0, which can be installed;
+│     │        ├─ numpy 1.25.0 would require
+│     │        │  └─ numpy-base 1.25.0 py311hbfb1bba_0, which can be installed;
+│     │        ├─ numpy 1.25.0 would require
+│     │        │  └─ numpy-base 1.25.0 py39hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.25.0 would require
+│     │        │  └─ numpy-base 1.25.0 py39h8a23956_0, which can be installed;
+│     │        ├─ numpy 1.25.2 would require
+│     │        │  └─ numpy-base 1.25.2 py310hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.25.2 would require
+│     │        │  └─ numpy-base 1.25.2 py310h8a23956_0, which can be installed;
+│     │        ├─ numpy 1.25.2 would require
+│     │        │  └─ numpy-base 1.25.2 py311hf175353_0, which can be installed;
+│     │        ├─ numpy 1.25.2 would require
+│     │        │  └─ numpy-base 1.25.2 py311hbfb1bba_0, which can be installed;
+│     │        ├─ numpy 1.25.2 would require
+│     │        │  └─ numpy-base 1.25.2 py39hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.25.2 would require
+│     │        │  └─ numpy-base 1.25.2 py39h8a23956_0, which can be installed;
+│     │        ├─ numpy 1.26.0 would require
+│     │        │  └─ numpy-base 1.26.0 py310hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.26.0 would require
+│     │        │  └─ numpy-base 1.26.0 py310h8a23956_0, which can be installed;
+│     │        ├─ numpy 1.26.0 would require
+│     │        │  └─ numpy-base 1.26.0 py311hf175353_0, which can be installed;
+│     │        ├─ numpy 1.26.0 would require
+│     │        │  └─ numpy-base 1.26.0 py311hbfb1bba_0, which can be installed;
+│     │        ├─ numpy 1.26.0 would require
+│     │        │  └─ numpy-base 1.26.0 py312he1a6c75_0, which can be installed;
+│     │        ├─ numpy 1.26.0 would require
+│     │        │  └─ numpy-base 1.26.0 py312h0da6c21_0, which can be installed;
+│     │        ├─ numpy 1.26.0 would require
+│     │        │  └─ numpy-base 1.26.0 py39hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.26.0 would require
+│     │        │  └─ numpy-base 1.26.0 py39h8a23956_0, which can be installed;
+│     │        ├─ numpy 1.26.2 would require
+│     │        │  └─ numpy-base 1.26.2 py310hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.26.2 would require
+│     │        │  └─ numpy-base 1.26.2 py310h8a23956_0, which can be installed;
+│     │        ├─ numpy 1.26.2 would require
+│     │        │  └─ numpy-base 1.26.2 py311hf175353_0, which can be installed;
+│     │        ├─ numpy 1.26.2 would require
+│     │        │  └─ numpy-base 1.26.2 py311hbfb1bba_0, which can be installed;
+│     │        ├─ numpy 1.26.2 would require
+│     │        │  └─ numpy-base 1.26.2 py312he1a6c75_0, which can be installed;
+│     │        ├─ numpy 1.26.2 would require
+│     │        │  └─ numpy-base 1.26.2 py312h0da6c21_0, which can be installed;
+│     │        ├─ numpy 1.26.2 would require
+│     │        │  └─ numpy-base 1.26.2 py39hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.26.2 would require
+│     │        │  └─ numpy-base 1.26.2 py39h8a23956_0, which can be installed;
+│     │        ├─ numpy 1.26.3 would require
+│     │        │  └─ numpy-base 1.26.3 py310hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.26.3 would require
+│     │        │  └─ numpy-base 1.26.3 py310h8a23956_0, which can be installed;
+│     │        ├─ numpy 1.26.3 would require
+│     │        │  └─ numpy-base 1.26.3 py311hf175353_0, which can be installed;
+│     │        ├─ numpy 1.26.3 would require
+│     │        │  └─ numpy-base 1.26.3 py311hbfb1bba_0, which can be installed;
+│     │        ├─ numpy 1.26.3 would require
+│     │        │  └─ numpy-base 1.26.3 py312he1a6c75_0, which can be installed;
+│     │        ├─ numpy 1.26.3 would require
+│     │        │  └─ numpy-base 1.26.3 py312h0da6c21_0, which can be installed;
+│     │        ├─ numpy 1.26.3 would require
+│     │        │  └─ numpy-base 1.26.3 py39hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.26.3 would require
+│     │        │  └─ numpy-base 1.26.3 py39h8a23956_0, which can be installed;
+│     │        ├─ numpy 1.26.4 would require
+│     │        │  └─ numpy-base 1.26.4 py310hb5e798b_0, which can be installed;
+│     │        ├─ numpy 1.26.4 would require
+│     │        │  └─ numpy-base 1.26.4 py310h8a23956_0, which can be installed;
+│     │        ├─ numpy 1.26.4 would require
+│     │        │  └─ numpy-base 1.26.4 py311hf175353_0, which can be installed;
+│     │        ├─ numpy 1.26.4 would require
+│     │        │  └─ numpy-base 1.26.4 py311hbfb1bba_0, which can be installed;
+│     │        ├─ numpy 1.26.4 would require
+│     │        │  └─ numpy-base 1.26.4 py312he1a6c75_0, which can be installed;
+│     │        ├─ numpy 1.26.4 would require
+│     │        │  └─ numpy-base 1.26.4 py312h0da6c21_0, which can be installed;
+│     │        ├─ numpy 1.26.4 would require
+│     │        │  └─ numpy-base 1.26.4 py39hb5e798b_0, which can be installed;
+│     │        └─ numpy 1.26.4 would require
+│     │           └─ numpy-base 1.26.4 py39h8a23956_0, which can be installed;
+│     ├─ tensorflow 2.10.0 would require
+│     │  └─ tensorflow-base 2.10.0 cuda112py37ha0c8746_0, which requires
+│     │     ├─ icu >=70.1,<71.0a0 , which conflicts with any installable versions previously reported;
+│     │     ├─ libpng >=1.6.38,<1.7.0a0 , which can be installed;
+│     │     ├─ libprotobuf >=3.21.6,<3.22.0a0 , which can be installed;
+│     │     └─ numpy >=1.20.3,<2.0a0  with the potential options
+│     │        ├─ numpy 1.20.3, which can be installed;
+│     │        ├─ numpy [1.20.3|1.21.0|...|1.26.4], which can be installed (as previously explained);
+│     │        ├─ numpy [1.20.3|1.21.0] would require
+│     │        │  └─ pypy3.7 >=7.3.4 , which can be installed (as previously explained);
+│     │        ├─ numpy [1.20.3|1.21.3|1.21.4|1.21.5] would require
+│     │        │  └─ pypy3.7 >=7.3.7 , which can be installed (as previously explained);
+│     │        ├─ numpy 1.20.3 would require
+│     │        │  ├─ pypy3.8 >=7.3.8 , which can be installed (as previously explained);
+│     │        │  └─ pypy3.9 >=7.3.8 , which can be installed (as previously explained);
+│     │        ├─ numpy [1.21.1|1.21.2|1.21.3] would require
+│     │        │  └─ pypy3.7 >=7.3.5 , which can be installed (as previously explained);
+│     │        ├─ numpy [1.21.5|1.21.6|...|1.24.1], which can be installed (as previously explained);
+│     │        ├─ numpy [1.24.2|1.24.3|...|1.25.2], which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy [1.26.2|1.26.3], which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.20.3 would require
+│     │        │  └─ numpy-base 1.20.3 py37h39b7dee_0, which can be installed;
+│     │        ├─ numpy 1.20.3 would require
+│     │        │  └─ numpy-base 1.20.3 py37h74d4b33_0, which can be installed;
+│     │        ├─ numpy 1.20.3 would require
+│     │        │  └─ numpy-base 1.20.3 py38h39b7dee_0, which can be installed;
+│     │        ├─ numpy 1.20.3 would require
+│     │        │  └─ numpy-base 1.20.3 py38h7e635b3_1, which can be installed;
+│     │        ├─ numpy 1.20.3 would require
+│     │        │  └─ numpy-base 1.20.3 py38h74d4b33_0, which can be installed;
+│     │        ├─ numpy 1.20.3 would require
+│     │        │  └─ numpy-base 1.20.3 py39h39b7dee_0, which can be installed;
+│     │        ├─ numpy 1.20.3 would require
+│     │        │  └─ numpy-base 1.20.3 py39h7e635b3_1, which can be installed;
+│     │        ├─ numpy 1.20.3 would require
+│     │        │  └─ numpy-base 1.20.3 py39h74d4b33_0, which can be installed;
+│     │        ├─ numpy 1.21.2 would require
+│     │        │  └─ numpy-base 1.21.2 py310h79a1101_0, which can be installed;
+│     │        ├─ numpy 1.21.2 would require
+│     │        │  └─ numpy-base 1.21.2 py310h2b8c604_0, which can be installed;
+│     │        ├─ numpy 1.21.2 would require
+│     │        │  └─ numpy-base 1.21.2 py37h79a1101_0, which can be installed;
+│     │        ├─ numpy 1.21.2 would require
+│     │        │  └─ numpy-base 1.21.2 py37h2b8c604_0, which can be installed;
+│     │        ├─ numpy 1.21.2 would require
+│     │        │  └─ numpy-base 1.21.2 py38h79a1101_0, which can be installed;
+│     │        ├─ numpy 1.21.2 would require
+│     │        │  └─ numpy-base 1.21.2 py38h2b8c604_0, which can be installed;
+│     │        ├─ numpy 1.21.2 would require
+│     │        │  └─ numpy-base 1.21.2 py39h79a1101_0, which can be installed;
+│     │        ├─ numpy 1.21.2 would require
+│     │        │  └─ numpy-base 1.21.2 py39h2b8c604_0, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py310hcba007f_3, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py310hf2716ce_1, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py310hf2716ce_2, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py310hb5e798b_4, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py310h375b286_3, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py310h9585f30_1, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py310h9585f30_2, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py37ha15fc14_3, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py37hb8be1f0_1, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py37hb8be1f0_2, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py37hf524024_1, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py37hf524024_2, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py37h1e6e340_3, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py38ha15fc14_3, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py38hb8be1f0_1, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py38hb8be1f0_2, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py38hf524024_1, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py38hf524024_2, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py38h060ed82_4, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py38h1e6e340_3, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py39ha15fc14_3, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py39hb8be1f0_1, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py39hb8be1f0_2, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py39hf524024_1, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py39hf524024_2, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py39h060ed82_4, which can be installed;
+│     │        ├─ numpy 1.21.5 would require
+│     │        │  └─ numpy-base 1.21.5 py39h1e6e340_3, which can be installed;
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which cannot be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which cannot be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        └─ numpy 1.26.4, which can be installed (as previously explained);
+│     ├─ tensorflow 2.10.0 would require
+│     │  ├─ python_abi 3.8.* *_cp38, which can be installed;
+│     │  └─ tensorflow-base 2.10.0 cuda112py38h6b2b66c_0, which cannot be installed (as previously explained);
+│     ├─ tensorflow 2.10.0 would require
+│     │  ├─ python_abi 3.9.* *_cp39, which can be installed;
+│     │  └─ tensorflow-base 2.10.0 cuda112py39h2957820_0, which cannot be installed (as previously explained);
+│     ├─ tensorflow 2.10.0 would require
+│     │  ├─ python_abi 3.10.* *_cp310, which can be installed;
+│     │  └─ tensorflow-base 2.10.0 cpu_py310hc537a0e_0, which requires
+│     │     ├─ libpng >=1.6.38,<1.7.0a0 , which can be installed;
+│     │     ├─ libprotobuf >=3.21.6,<3.22.0a0 , which can be installed;
+│     │     └─ numpy >=1.21.6,<2.0a0  with the potential options
+│     │        ├─ numpy [1.20.3|1.21.0|...|1.26.4], which can be installed (as previously explained);
+│     │        ├─ numpy [1.21.5|1.21.6|...|1.24.1], which can be installed (as previously explained);
+│     │        ├─ numpy [1.24.2|1.24.3|...|1.25.2], which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy [1.26.2|1.26.3], which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which cannot be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which cannot be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        └─ numpy 1.26.4, which can be installed (as previously explained);
+│     ├─ tensorflow 2.10.0 would require
+│     │  └─ tensorflow-base 2.10.0 cpu_py37h50bd216_0, which requires
+│     │     ├─ libpng >=1.6.38,<1.7.0a0 , which can be installed;
+│     │     ├─ libprotobuf >=3.21.6,<3.22.0a0 , which can be installed;
+│     │     └─ numpy >=1.20.3,<2.0a0  with the potential options
+│     │        ├─ numpy 1.20.3, which can be installed;
+│     │        ├─ numpy [1.20.3|1.21.0|...|1.26.4], which can be installed (as previously explained);
+│     │        ├─ numpy [1.20.3|1.21.0], which can be installed (as previously explained);
+│     │        ├─ numpy [1.20.3|1.21.3|1.21.4|1.21.5], which can be installed (as previously explained);
+│     │        ├─ numpy 1.20.3, which can be installed (as previously explained);
+│     │        ├─ numpy [1.21.1|1.21.2|1.21.3], which can be installed (as previously explained);
+│     │        ├─ numpy [1.21.5|1.21.6|...|1.24.1], which can be installed (as previously explained);
+│     │        ├─ numpy [1.24.2|1.24.3|...|1.25.2], which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy [1.26.2|1.26.3], which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.20.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.20.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.20.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.20.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.20.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.20.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.20.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.20.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.21.6, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.22.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.1, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which cannot be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which cannot be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.23.5, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.24.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.25.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.0, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.2, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.3, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        ├─ numpy 1.26.4, which can be installed (as previously explained);
+│     │        └─ numpy 1.26.4, which can be installed (as previously explained);
+│     ├─ tensorflow 2.10.0 would require
+│     │  ├─ python_abi 3.8.* *_cp38, which can be installed;
+│     │  └─ tensorflow-base 2.10.0 cpu_py38h67fe383_0, which can be installed (as previously explained);
+│     ├─ tensorflow 2.10.0 would require
+│     │  ├─ python_abi 3.9.* *_cp39, which can be installed;
+│     │  └─ tensorflow-base 2.10.0 cpu_py39h16601f7_0, which can be installed (as previously explained);
+│     ├─ tensorflow 2.10.0 would require
+│     │  └─ tensorflow-base [2.10.0 eigen_py310h1969d1f_0|2.10.0 eigen_py37h1969d1f_0|...|2.10.0 mkl_py39hb9daa73_0], which requires
+│     │     ├─ libcurl [>=7.85.0,<8.0a0 |>=7.85.0,<9.0a0 ], which can be installed (as previously explained);
+│     │     ├─ libprotobuf >=3.20.1,<3.21.0a0 , which can be installed;
+│     │     └─ sqlite >=3.39.3,<4.0a0  with the potential options
+│     │        ├─ sqlite [3.39.3|3.39.4|...|3.49.1], which can be installed;
+│     │        └─ sqlite 3.49.0 would require
+│     │           └─ libsqlite 3.49.0 hee588c1_0, which does not exist (perhaps a missing channel);
+│     ├─ tensorflow [0.10.0|0.7.1|0.8.0|0.9.0] would require
+│     │  └─ protobuf 3.0.0b2 , which can be installed;
+│     ├─ tensorflow [0.11.0|0.11.0rc0|0.11.0rc2|0.12.1] would require
+│     │  └─ protobuf 3.0.0 , which can be installed;
+│     ├─ tensorflow 0.12.1 would require
+│     │  └─ protobuf 3.1.0 , which can be installed;
+│     ├─ tensorflow [1.0.0|1.1.0|1.10.0|1.9.0] would require
+│     │  └─ python [2.7* |>=2.7,<2.8.0a0 ] with the potential options
+│     │     ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│     │     ├─ python [2.7.15|3.6.7|3.7.1], which cannot be installed (as previously explained);
+│     │     ├─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+│     │     ├─ python [2.7.12|2.7.13|...|3.6.3] would require
+│     │     │  └─ readline 6.2* , which can be installed;
+│     │     ├─ python [2.7.15|2.7.18] conflicts with any installable versions previously reported;
+│     │     └─ python 2.7.18 would require
+│     │        └─ ncurses >=6.3,<7.0a0 , which can be installed;
+│     ├─ tensorflow [1.0.0|1.1.0|1.10.0|1.9.0] would require
+│     │  └─ python [3.5* |>=3.5,<3.6.0a0 ], which can be installed (as previously explained);
+│     ├─ tensorflow [1.0.0|1.1.0|1.10.0|1.9.0] would require
+│     │  └─ python [3.6* |>=3.6,<3.7.0a0 ] with the potential options
+│     │     ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│     │     ├─ python [2.7.15|3.6.7|3.7.1], which cannot be installed (as previously explained);
+│     │     ├─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+│     │     ├─ python 3.6.9 would require
+│     │     │  └─ python_abi 3.6 *_pypy36_pp73, which can be installed;
+│     │     ├─ python [2.7.12|2.7.13|...|3.6.3], which can be installed (as previously explained);
+│     │     ├─ python [3.6.10|3.6.11|3.6.7|3.6.9] conflicts with any installable versions previously reported;
+│     │     ├─ python 3.6.11 would require
+│     │     │  └─ ld_impl_linux-64 >=2.34 , which can be installed;
+│     │     ├─ python 3.6.12 would require
+│     │     │  ├─ pypy3.6 7.3.3.* , which requires
+│     │     │  │  └─ libffi >=3.3,<3.4.0a0 , which can be installed;
+│     │     │  └─ python_abi 3.6 *_pypy36_pp73, which can be installed;
+│     │     └─ python [3.6.13|3.6.15] would require
+│     │        └─ readline >=8.1,<9.0a0 , which can be installed;
+│     ├─ tensorflow 1.13.1 would require
+│     │  └─ tensorflow-base 1.13.1 py36h58012e3_6, which can be installed;
+│     ├─ tensorflow 1.13.1 would require
+│     │  └─ tensorflow-base 1.13.1 py37h5ece82f_4, which can be installed;
+│     ├─ tensorflow 1.13.1 would require
+│     │  └─ tensorflow-base 1.13.1 py37h5ece82f_5, which can be installed;
+│     ├─ tensorflow 1.13.1 would require
+│     │  └─ tensorflow-base 1.13.1 py36h76b4ce7_7, which can be installed;
+│     ├─ tensorflow 1.13.1 would require
+│     │  └─ tensorflow-base 1.13.1 py27h76b4ce7_8, which can be installed;
+│     ├─ tensorflow 1.13.1 would require
+│     │  └─ tensorflow-estimator [>=1.13.0,<1.14.0a0 |>=1.13.0,<1.14.0rc0 ], which can be installed;
+│     ├─ tensorflow 1.13.2 would require
+│     │  └─ tensorflow-base 1.13.2 py27h76b4ce7_0, which can be installed;
+│     ├─ tensorflow 1.14.0 would require
+│     │  └─ tensorflow-base 1.14.0 py37h4531e10_0, which can be installed;
+│     ├─ tensorflow 1.14.0 would require
+│     │  ├─ python_abi 3.6.* *_cp36m, which can be installed;
+│     │  └─ tensorflow-base 1.14.0 py36hc3e5e64_0, which can be installed;
+│     ├─ tensorflow [1.2.0|1.2.1|...|1.8.0] would require
+│     │  ├─ bleach 1.5.0 , which conflicts with any installable versions previously reported;
+│     │  ├─ tensorboard [>=0.4.0rc1,<0.5.0 |>=1.5.0,<1.6.0 |>=1.6.0,<1.7.0 |>=1.7.0,<1.8.0 |>=1.8.0,<1.9.0 ], which requires
+│     │  │  └─ bleach [1.5.0 |>=1.5.0,<1.5.1.0a0 ], which conflicts with any installable versions previously reported;
+│     │  └─ tensorflow-tensorboard [ |>=1.5.0,<1.6.0 ], which requires
+│     │     └─ bleach [1.5.0 |>=1.5.0,<1.5.1.0a0 ], which conflicts with any installable versions previously reported;
+│     ├─ tensorflow [2.4.0|2.4.1] would require
+│     │  ├─ python_abi 3.6.* *_cp36m, which can be installed;
+│     │  └─ tensorflow-base [2.4.0 py36h515a7b5_0|2.4.1 py36h312d151_0], which requires
+│     │     └─ six >=1.15.0 , which can be installed;
+│     ├─ tensorflow [2.4.0|2.4.1|2.5.0|2.6.0] would require
+│     │  └─ tensorflow-base [2.4.0 py37h00a14e9_0|2.4.1 eigen_py37h17880bf_0|...|2.6.0 mkl_py39h3d85931_0], which can be installed (as previously explained);
+│     ├─ tensorflow [2.4.0|2.4.1] would require
+│     │  ├─ python_abi 3.8.* *_cp38, which can be installed;
+│     │  └─ tensorflow-base [2.4.0 py38h01d9eeb_0|2.4.1 py38h83f5f1d_0], which can be installed (as previously explained);
+│     ├─ tensorflow 2.4.1 would require
+│     │  ├─ python_abi 3.9.* *_cp39, which can be installed;
+│     │  └─ tensorflow-base 2.4.1 py39h23a8cbf_0, which can be installed (as previously explained);
+│     ├─ tensorflow 2.4.3 would require
+│     │  └─ tensorflow-base [2.4.3 py36h312d151_0|2.4.3 py37he2fe834_0|2.4.3 py38h83f5f1d_0|2.4.3 py39h23a8cbf_0], which requires
+│     │     └─ typing_extensions 3.7.4.* , which can be installed;
+│     ├─ tensorflow [2.6.0|2.6.2] would require
+│     │  └─ tensorflow-base [2.6.0 cpu_py37hc5ef7b8_2|2.6.0 cpu_py38h4611ba2_2|...|2.6.2 cuda112py39he9472f8_1], which requires
+│     │     └─ wrapt >=1.12.1,<1.13 , which can be installed;
+│     ├─ tensorflow [2.7.0|2.7.1|2.8.0|2.8.1|2.9.1] would require
+│     │  ├─ python_abi 3.10.* *_cp310, which can be installed;
+│     │  └─ tensorflow-base [2.7.0 cpu_py310h8d3bea7_0|2.7.0 cuda102py310hf4be40b_0|...|2.9.1 cuda112py310hc65a3b4_0], which requires
+│     │     └─ libcurl [>=7.81.0,<9.0a0 |>=7.82.0,<8.0a0 |...|>=7.84.0,<9.0a0 ], which can be installed (as previously explained);
+│     ├─ tensorflow [2.7.0|2.7.1|...|2.9.1] would require
+│     │  └─ tensorflow-base [2.7.0 cpu_py37h8697747_0|2.7.0 cuda102py37h44d275c_0|...|2.9.1 mkl_py39h353358b_1], which can be installed (as previously explained);
+│     ├─ tensorflow [2.7.0|2.7.1|2.8.0|2.8.1|2.9.1] would require
+│     │  ├─ python_abi 3.8.* *_cp38, which can be installed;
+│     │  └─ tensorflow-base [2.7.0 cpu_py38h48ebf30_0|2.7.0 cuda102py38h021f141_0|...|2.9.1 cuda112py38h47a61a2_0], which can be installed (as previously explained);
+│     ├─ tensorflow [2.7.0|2.7.1|2.8.0|2.8.1|2.9.1] would require
+│     │  ├─ python_abi 3.9.* *_cp39, which can be installed;
+│     │  └─ tensorflow-base [2.7.0 cpu_py39hf4995fd_0|2.7.0 cuda102py39h15c874f_0|...|2.9.1 cuda112py39h81abfd3_0], which can be installed (as previously explained);
+│     ├─ tensorflow [2.11.0|2.11.1] would require
+│     │  ├─ python_abi 3.10.* *_cp310, which can be installed;
+│     │  └─ tensorflow-base [2.11.0 cpu_py310*_0|2.11.0 cpu_py310h9fe5a9a_1|...|2.11.1 cuda112py310h4c92a00_0], which requires
+│     │     └─ libpng >=1.6.39,<1.7.0a0 , which can be installed;
+│     ├─ tensorflow [2.11.0|2.11.1] would require
+│     │  ├─ python_abi 3.8.* *_cp38, which can be installed;
+│     │  └─ tensorflow-base [2.11.0 cpu_py38*_0|2.11.0 cpu_py38h1497e92_1|...|2.11.1 cuda112py38hd7790fd_0], which can be installed (as previously explained);
+│     ├─ tensorflow [2.11.0|2.11.1] would require
+│     │  ├─ python_abi 3.9.* *_cp39, which can be installed;
+│     │  └─ tensorflow-base [2.11.0 cpu_py39*_0|2.11.0 cpu_py39hdd9e636_1|...|2.11.1 cuda112py39h0320e7d_0], which can be installed (as previously explained);
+│     ├─ tensorflow [2.12.0|2.12.1] would require
+│     │  ├─ python_abi [3.10.* *_cp310|3.11.* *_cp311|3.8.* *_cp38|3.9.* *_cp39], which can be installed;
+│     │  ├─ tensorboard 2.12.* , which requires
+│     │  │  └─ protobuf >=3.19.6  with the potential options
+│     │  │     ├─ protobuf [3.19.6|3.20.0|...|5.28.3] would require
+│     │  │     │  └─ python_abi 3.10.* *_cp310, which can be installed;
+│     │  │     ├─ protobuf 3.20.0 would require
+│     │  │     │  └─ python_abi 3.7 *_pypy37_pp73, which can be installed;
+│     │  │     ├─ protobuf [3.19.6|3.20.0|...|4.21.5], which can be installed;
+│     │  │     ├─ protobuf [3.20.0|3.20.1|...|4.23.4] would require
+│     │  │     │  └─ python_abi 3.8 *_pypy38_pp73, which can be installed;
+│     │  │     ├─ protobuf [3.19.6|3.20.0|...|4.25.3] would require
+│     │  │     │  └─ python_abi 3.8.* *_cp38, which can be installed;
+│     │  │     ├─ protobuf [3.20.0|3.20.1|...|4.25.3] would require
+│     │  │     │  └─ python_abi 3.9 *_pypy39_pp73, which can be installed;
+│     │  │     ├─ protobuf [3.19.6|3.20.0|...|5.28.3] would require
+│     │  │     │  └─ python_abi 3.9.* *_cp39, which can be installed;
+│     │  │     ├─ protobuf [3.20.3|4.21.6|4.21.7|4.21.8|4.25.3], which can be installed;
+│     │  │     ├─ protobuf [3.20.2|3.20.3|...|5.28.3] would require
+│     │  │     │  └─ python_abi 3.11.* *_cp311, which can be installed;
+│     │  │     ├─ protobuf [4.23.4|4.24.3|...|5.28.3] would require
+│     │  │     │  └─ python_abi 3.12.* *_cp312, which can be installed;
+│     │  │     └─ protobuf [4.25.3|5.26.1|...|5.28.3] would require
+│     │  │        └─ python_abi 3.13.* *_cp313, which can be installed;
+│     │  └─ tensorflow-base [2.12.1 cpu_py310h57e0714_0|2.12.1 cpu_py310h91b7bb3_1|...|2.12.1 cuda112py39h9de0d86_1], which requires
+│     │     └─ tensorboard >=2.12,<2.13 , which can be installed (as previously explained);
+│     ├─ tensorflow [2.13.1|2.14.0|...|2.17.0] would require
+│     │  ├─ python_abi [3.10.* *_cp310|3.11.* *_cp311|3.12.* *_cp312|3.8.* *_cp38|3.9.* *_cp39], which can be installed;
+│     │  └─ tensorflow-base [2.13.1 cpu_py310h3c6a6a6_1|2.13.1 cpu_py311ha0be21f_1|...|2.17.0 cuda120py39hee30cbf_201], which requires
+│     │     └─ protobuf >=3.20.3,<5,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5  with the potential options
+│     │        ├─ protobuf [3.19.6|3.20.0|...|5.28.3], which can be installed (as previously explained);
+│     │        ├─ protobuf [3.20.0|3.20.1|...|4.23.4], which can be installed (as previously explained);
+│     │        ├─ protobuf [3.19.6|3.20.0|...|4.25.3], which can be installed (as previously explained);
+│     │        ├─ protobuf [3.20.0|3.20.1|...|4.25.3], which can be installed (as previously explained);
+│     │        ├─ protobuf [3.19.6|3.20.0|...|5.28.3], which can be installed (as previously explained);
+│     │        ├─ protobuf [3.20.3|4.21.6|4.21.7|4.21.8|4.25.3], which can be installed;
+│     │        ├─ protobuf [3.20.2|3.20.3|...|5.28.3], which can be installed (as previously explained);
+│     │        ├─ protobuf [4.23.4|4.24.3|...|5.28.3], which can be installed (as previously explained);
+│     │        └─ protobuf [4.25.3|5.26.1|...|5.28.3], which can be installed (as previously explained);
+│     ├─ tensorflow [2.17.0|2.18.0] would require
+│     │  ├─ python_abi [3.10.* *_cp310|3.11.* *_cp311|3.12.* *_cp312|3.9.* *_cp39], which can be installed;
+│     │  └─ tensorflow-base [2.17.0 cpu_py310hfda4fce_3|2.17.0 cpu_py311h78ee05f_3|...|2.18.0 cuda126py39h7b6b450_200], which requires
+│     │     └─ protobuf >=5.26,<6 , which can be installed (as previously explained);
+│     ├─ tensorflow 1.10.0 would require
+│     │  └─ tensorflow-base ==1.10.0 eigen_py27h4dcebc2_0, which can be installed;
+│     ├─ tensorflow 1.10.0 would require
+│     │  └─ tensorflow-base ==1.10.0 eigen_py35h4dcebc2_0, which can be installed;
+│     ├─ tensorflow 1.10.0 would require
+│     │  └─ tensorflow-base ==1.10.0 eigen_py36h4dcebc2_0, which can be installed;
+│     ├─ tensorflow [1.10.0|1.11.0|1.12.0] would require
+│     │  └─ tensorflow-base [==1.10.0 gpu_py27had579c0_0|==1.10.0 gpu_py35had579c0_0|...|==1.12.0 gpu_py36had579c0_0] but there are no viable options
+│     │     ├─ tensorflow-base [1.10.0|1.11.0|1.12.0|1.13.1|1.14.0] would require
+│     │     │  └─ cudatoolkit [9.2.* |>=9.2,<9.3.0a0 ], which conflicts with any installable versions previously reported;
+│     │     └─ tensorflow-base [1.10.0|1.11.0|1.12.0] would require
+│     │        └─ cudnn 7.2.* , which conflicts with any installable versions previously reported;
+│     ├─ tensorflow [1.10.0|1.11.0|1.12.0|1.9.0] would require
+│     │  └─ tensorflow-base [==1.10.0 gpu_py27h6ecc378_0|==1.10.0 gpu_py35h6ecc378_0|...|==1.9.0 gpu_py36h6ecc378_0] but there are no viable options
+│     │     ├─ tensorflow-base [1.10.0|1.11.0|...|1.9.0] would require
+│     │     │  └─ cudatoolkit [9.0.* |>=9.0,<9.1.0a0 ], which conflicts with any installable versions previously reported;
+│     │     └─ tensorflow-base [1.10.0|1.11.0|1.12.0|1.9.0] would require
+│     │        └─ cudnn 7.1.*  but there are no viable options
+│     │           ├─ cudnn 7.1.2 conflicts with any installable versions previously reported;
+│     │           └─ cudnn 7.1.3 would require
+│     │              └─ cudatoolkit 8.0.* , which does not exist (perhaps a missing channel);
+│     ├─ tensorflow [1.10.0|1.8.0|1.9.0] would require
+│     │  └─ tensorflow-base [==1.10.0 gpu_py27h3435052_0|==1.10.0 gpu_py35h3435052_0|...|==1.9.0 gpu_py36h9f529ab_1], which requires
+│     │     └─ cudatoolkit 8.0.* , which does not exist (perhaps a missing channel);
+│     ├─ tensorflow 1.10.0 would require
+│     │  └─ tensorflow-base ==1.10.0 mkl_py27h3c3e929_0, which can be installed;
+│     ├─ tensorflow 1.10.0 would require
+│     │  └─ tensorflow-base ==1.10.0 mkl_py35h3c3e929_0, which can be installed;
+│     ├─ tensorflow 1.10.0 would require
+│     │  └─ tensorflow-base ==1.10.0 mkl_py36h3c3e929_0, which can be installed;
+│     ├─ tensorflow [1.10.0|1.11.0|...|2.2.0] would require
+│     │  └─ _tflow_select [2.2.0 eigen|==2.2.0 eigen], which conflicts with any installable versions previously reported;
+│     ├─ tensorflow [1.10.0|1.11.0|...|2.3.0] would require
+│     │  └─ _tflow_select [2.3.0 mkl|==2.3.0 mkl], which conflicts with any installable versions previously reported;
+│     ├─ tensorflow [1.13.1|1.14.0] would require
+│     │  └─ tensorflow-base [==1.13.1 gpu_py27h611c6d2_0|==1.13.1 gpu_py36h611c6d2_0|...|==1.14.0 gpu_py37h611c6d2_0], which cannot be installed (as previously explained);
+│     ├─ tensorflow 1.13.1 would require
+│     │  └─ tensorflow-base ==1.13.1 gpu_py27h8d69cac_0, which can be installed;
+│     ├─ tensorflow [1.13.1|1.14.0|1.8.0] would require
+│     │  └─ tensorflow-base [==1.13.1 gpu_py27h8f37b9b_0|==1.13.1 gpu_py36h8f37b9b_0|...|==1.8.0 py36hc1a7637_0], which cannot be installed (as previously explained);
+│     ├─ tensorflow 1.13.1 would require
+│     │  └─ tensorflow-base ==1.13.1 gpu_py36h8d69cac_0, which can be installed;
+│     ├─ tensorflow 1.13.1 would require
+│     │  └─ tensorflow-base ==1.13.1 gpu_py37h8d69cac_0, which can be installed;
+│     ├─ tensorflow 1.14.0 would require
+│     │  └─ tensorflow-base [==1.14.0 gpu_py27he45bfe2_0|==1.14.0 gpu_py36he45bfe2_0|==1.14.0 gpu_py37he45bfe2_0], which requires
+│     │     └─ cudatoolkit >=10.1.168,<10.2.0a0 , which conflicts with any installable versions previously reported;
+│     ├─ tensorflow 1.14.0 would require
+│     │  └─ tensorflow-base ==1.14.0 gpu_py27h8d69cac_0, which can be installed;
+│     ├─ tensorflow 1.14.0 would require
+│     │  └─ tensorflow-base ==1.14.0 gpu_py36h8d69cac_0, which can be installed;
+│     ├─ tensorflow 1.14.0 would require
+│     │  └─ tensorflow-base ==1.14.0 gpu_py37h8d69cac_0, which can be installed;
+│     ├─ tensorflow [1.15.0|2.0.0] would require
+│     │  └─ tensorflow-base [1.15.0 eigen_py27hd4672e3_0|1.15.0 gpu_py27hf473bbb_0|...|2.0.0 mkl_py27had7a488_0], which requires
+│     │     └─ mock >=2.0.0,<3.0a0  with the potential options
+│     │        ├─ mock 2.0.0, which can be installed;
+│     │        ├─ mock 2.0.0 would require
+│     │        │  └─ python_abi 3.6.* *_cp36m, which can be installed;
+│     │        ├─ mock 2.0.0 would require
+│     │        │  └─ python_abi 3.7 *_pypy37_pp73, which can be installed;
+│     │        ├─ mock 2.0.0 would require
+│     │        │  └─ python_abi 3.8.* *_cp38, which can be installed;
+│     │        └─ mock 2.0.0 would require
+│     │           └─ python_abi 3.9.* *_cp39, which can be installed;
+│     ├─ tensorflow [1.15.0|2.0.0|2.1.0] would require
+│     │  └─ tensorflow-base [1.15.0 eigen_py36h52b156a_0|1.15.0 eigen_py37h52b156a_0|...|2.1.0 mkl_py37h6d63fb7_0], which requires
+│     │     └─ gast >=0.2.2,<0.2.3.0a0 , which conflicts with any installable versions previously reported;
+│     ├─ tensorflow 1.9.0 would require
+│     │  └─ tensorflow-base ==1.9.0 eigen_py27hdfca3bf_0, which can be installed;
+│     ├─ tensorflow 1.9.0 would require
+│     │  └─ tensorflow-base ==1.9.0 eigen_py35hdfca3bf_0, which can be installed;
+│     ├─ tensorflow 1.9.0 would require
+│     │  └─ tensorflow-base ==1.9.0 eigen_py36hdfca3bf_0, which can be installed;
+│     ├─ tensorflow 1.9.0 would require
+│     │  └─ tensorflow-base [==1.9.0 gpu_py27h9f529ab_0|==1.9.0 gpu_py35h9f529ab_0|==1.9.0 gpu_py36h9f529ab_0] but there are no viable options
+│     │     ├─ tensorflow-base [1.10.0|1.8.0|1.9.0], which cannot be installed (as previously explained);
+│     │     └─ tensorflow-base 1.9.0 would require
+│     │        └─ package_has_been_revoked, which does not exist (perhaps a missing channel);
+│     ├─ tensorflow 1.9.0 would require
+│     │  └─ tensorflow-base ==1.9.0 mkl_py27h2ca6a6a_0, which can be installed;
+│     ├─ tensorflow 1.9.0 would require
+│     │  └─ tensorflow-base ==1.9.0 mkl_py35h2ca6a6a_0, which can be installed;
+│     ├─ tensorflow 1.9.0 would require
+│     │  └─ tensorflow-base ==1.9.0 mkl_py36h2ca6a6a_0, which can be installed;
+│     ├─ tensorflow 2.11.0 would require
+│     │  └─ tensorflow-base [2.11.0 eigen_py310h3323580_0|2.11.0 eigen_py38h3323580_0|...|2.11.0 mkl_py39he5f8e37_0], which can be installed (as previously explained);
+│     ├─ tensorflow 2.17.0 would require
+│     │  └─ tensorflow-base [2.17.0 cpu_py310h6deec89_0|2.17.0 cpu_py311hb07566e_0|...|2.17.0 cuda124py39h3b6feb8_200], which requires
+│     │     ├─ keras >=3.2.0 , which requires
+│     │     │  └─ optree with the potential options
+│     │     │     ├─ optree [0.10.0|0.11.0|...|0.9.2] would require
+│     │     │     │  └─ python_abi 3.10.* *_cp310, which can be installed;
+│     │     │     ├─ optree [0.3.0|0.4.0] would require
+│     │     │     │  └─ python_abi 3.8 *_pypy38_pp73, which can be installed;
+│     │     │     ├─ optree [0.10.0|0.11.0|...|0.9.2] would require
+│     │     │     │  └─ python_abi 3.8.* *_cp38, which can be installed;
+│     │     │     ├─ optree [0.3.0|0.4.0] would require
+│     │     │     │  └─ python_abi 3.9 *_pypy39_pp73, which can be installed;
+│     │     │     ├─ optree [0.10.0|0.11.0|...|0.9.2] would require
+│     │     │     │  └─ python_abi 3.9.* *_cp39, which can be installed;
+│     │     │     ├─ optree [0.10.0|0.11.0|...|0.9.2] would require
+│     │     │     │  └─ python_abi 3.11.* *_cp311, which can be installed;
+│     │     │     ├─ optree [0.10.0|0.11.0|0.12.1|0.9.2] would require
+│     │     │     │  └─ python_abi 3.12.* *_cp312, which can be installed;
+│     │     │     └─ optree [0.12.1|0.13.0|0.13.1|0.14.0] would require
+│     │     │        └─ typing-extensions [>=4.5 |>=4.5.0 ] with the potential options
+│     │     │           ├─ typing-extensions 4.10.0 would require
+│     │     │           │  └─ typing_extensions 4.10.0 pyha770c72_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.11.0 would require
+│     │     │           │  └─ typing_extensions 4.11.0 pyha770c72_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.12.1 would require
+│     │     │           │  └─ typing_extensions 4.12.1 pyha770c72_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.12.2 would require
+│     │     │           │  └─ typing_extensions 4.12.2 pyha770c72_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.12.2 would require
+│     │     │           │  └─ typing_extensions 4.12.2 pyha770c72_1, which can be installed;
+│     │     │           ├─ typing-extensions 4.5.0 would require
+│     │     │           │  └─ typing_extensions 4.5.0 pyha770c72_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.6.0 would require
+│     │     │           │  └─ typing_extensions 4.6.0 pyha770c72_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.6.1 would require
+│     │     │           │  └─ typing_extensions 4.6.1 pyha770c72_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.6.2 would require
+│     │     │           │  └─ typing_extensions 4.6.2 pyha770c72_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.6.3 would require
+│     │     │           │  └─ typing_extensions 4.6.3 pyha770c72_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.7.0 would require
+│     │     │           │  └─ typing_extensions 4.7.0 pyha770c72_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.7.1 would require
+│     │     │           │  └─ typing_extensions 4.7.1 pyha770c72_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.8.0 would require
+│     │     │           │  └─ typing_extensions 4.8.0 pyha770c72_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.9.0 would require
+│     │     │           │  └─ typing_extensions 4.9.0 pyha770c72_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.11.0 would require
+│     │     │           │  └─ typing_extensions 4.11.0 py310h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.11.0 would require
+│     │     │           │  └─ typing_extensions 4.11.0 py311h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.11.0 would require
+│     │     │           │  └─ typing_extensions 4.11.0 py312h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.11.0 would require
+│     │     │           │  └─ typing_extensions 4.11.0 py313h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.11.0 would require
+│     │     │           │  └─ typing_extensions 4.11.0 py38h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.11.0 would require
+│     │     │           │  └─ typing_extensions 4.11.0 py39h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.12.2 would require
+│     │     │           │  └─ typing_extensions 4.12.2 py310h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.12.2 would require
+│     │     │           │  └─ typing_extensions 4.12.2 py311h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.12.2 would require
+│     │     │           │  └─ typing_extensions 4.12.2 py312h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.12.2 would require
+│     │     │           │  └─ typing_extensions 4.12.2 py313h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.12.2 would require
+│     │     │           │  └─ typing_extensions 4.12.2 py39h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.5.0 would require
+│     │     │           │  └─ typing_extensions 4.5.0 py310h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.5.0 would require
+│     │     │           │  └─ typing_extensions 4.5.0 py311h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.5.0 would require
+│     │     │           │  └─ typing_extensions 4.5.0 py38h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.5.0 would require
+│     │     │           │  └─ typing_extensions 4.5.0 py39h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.6.3 would require
+│     │     │           │  └─ typing_extensions 4.6.3 py310h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.6.3 would require
+│     │     │           │  └─ typing_extensions 4.6.3 py311h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.6.3 would require
+│     │     │           │  └─ typing_extensions 4.6.3 py38h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.6.3 would require
+│     │     │           │  └─ typing_extensions 4.6.3 py39h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.7.1 would require
+│     │     │           │  └─ typing_extensions 4.7.1 py310h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.7.1 would require
+│     │     │           │  └─ typing_extensions 4.7.1 py311h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.7.1 would require
+│     │     │           │  └─ typing_extensions 4.7.1 py312h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.7.1 would require
+│     │     │           │  └─ typing_extensions 4.7.1 py38h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.7.1 would require
+│     │     │           │  └─ typing_extensions 4.7.1 py39h06a4308_0, which can be installed;
+│     │     │           ├─ typing-extensions 4.9.0 would require
+│     │     │           │  └─ typing_extensions 4.9.0 py310h06a4308_1, which can be installed;
+│     │     │           ├─ typing-extensions 4.9.0 would require
+│     │     │           │  └─ typing_extensions 4.9.0 py311h06a4308_1, which can be installed;
+│     │     │           ├─ typing-extensions 4.9.0 would require
+│     │     │           │  └─ typing_extensions 4.9.0 py312h06a4308_1, which can be installed;
+│     │     │           ├─ typing-extensions 4.9.0 would require
+│     │     │           │  └─ typing_extensions 4.9.0 py38h06a4308_1, which can be installed;
+│     │     │           ├─ typing-extensions 4.9.0 would require
+│     │     │           │  └─ typing_extensions 4.9.0 py39h06a4308_1, which can be installed;
+│     │     │           └─ typing-extensions 4.9.0 would require
+│     │     │              └─ typing_extensions 4.9.0 py311h06a4308_0, which can be installed;
+│     │     └─ protobuf >=3.20.3,<5,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5  with the potential options
+│     │        ├─ protobuf [3.19.6|3.20.0|...|5.28.3], which can be installed (as previously explained);
+│     │        ├─ protobuf [3.20.0|3.20.1|...|4.23.4], which can be installed (as previously explained);
+│     │        ├─ protobuf [3.19.6|3.20.0|...|4.25.3], which can be installed (as previously explained);
+│     │        ├─ protobuf [3.20.0|3.20.1|...|4.25.3], which can be installed (as previously explained);
+│     │        ├─ protobuf [3.19.6|3.20.0|...|5.28.3], which can be installed (as previously explained);
+│     │        ├─ protobuf [3.20.3|4.21.6|4.21.7|4.21.8|4.25.3], which can be installed;
+│     │        ├─ protobuf [3.20.2|3.20.3|...|5.28.3], which can be installed (as previously explained);
+│     │        ├─ protobuf [4.23.4|4.24.3|...|5.28.3], which can be installed (as previously explained);
+│     │        └─ protobuf [4.25.3|5.26.1|...|5.28.3], which can be installed (as previously explained);
+│     ├─ tensorflow 2.2.0 would require
+│     │  └─ tensorflow-base [2.2.0 gpu_py36h8a81be8_0|2.2.0 gpu_py37h8a81be8_0|2.2.0 gpu_py38h83e3d50_0], which requires
+│     │     └─ cudatoolkit >=10.1.243,<10.2.0a0 , which conflicts with any installable versions previously reported;
+│     └─ tensorflow 2.3.0 would require
+│        └─ _tflow_select 2.3.0 eigen, which conflicts with any installable versions previously reported;
+├─ ld_impl_linux-64 ==2.33.1 h53a641e_7 is not installable because it conflicts with any installable versions previously reported;
+├─ libedit ==3.1.20181209 hc058e9b_0 is not installable because it conflicts with any installable versions previously reported;
+├─ libffi ==3.2.1 hd88cf55_4 is not installable because it conflicts with any installable versions previously reported;
+├─ libgfortran-ng ==7.3.0 hdf63c60_0 is requested and can be installed;
+├─ libpng ==1.6.37 hbc83047_0 is not installable because it conflicts with any installable versions previously reported;
+├─ libprotobuf ==3.11.4 hd408876_0 is not installable because it conflicts with any installable versions previously reported;
+├─ libxcb ==1.13 h1bed415_1 is not installable because it conflicts with any installable versions previously reported;
+├─ mkl ==2020.0 166 is requested and can be installed;
+├─ mock ==4.0.1 py_0 is not installable because it conflicts with any installable versions previously reported;
+├─ ncurses ==6.2 he6710b0_0 is not installable because it conflicts with any installable versions previously reported;
+├─ numpy-base ==1.18.1 py37hde5b4d6_1 is not installable because it conflicts with any installable versions previously reported;
+├─ numpy ==1.18.1 py37h4f9e942_0 is not installable because it conflicts with any installable versions previously reported;
+├─ openssl ==1.1.1w h7f8727e_0 is not installable because it conflicts with any installable versions previously reported;
+├─ protobuf ==3.11.4 py37he6710b0_0 is not installable because there are no viable options
+│  ├─ protobuf 3.11.4 would require
+│  │  └─ python >=3.7,<3.8.0a0  with the potential options
+│  │     ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│  │     ├─ python [3.7.1|3.7.2|3.7.3], which can be installed (as previously explained);
+│  │     ├─ python 3.7.10, which can be installed (as previously explained);
+│  │     ├─ python 3.7.10, which can be installed (as previously explained);
+│  │     ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│  │     ├─ python [3.7.10|3.7.11|...|3.9.7], which can be installed (as previously explained);
+│  │     ├─ python 3.7.12, which can be installed (as previously explained);
+│  │     ├─ python 3.7.3, which can be installed (as previously explained);
+│  │     ├─ python [3.7.3|3.7.6|3.7.8], which can be installed (as previously explained);
+│  │     ├─ python [3.7.8|3.8.4|3.8.5|3.8.6], which can be installed (as previously explained);
+│  │     ├─ python 3.7.9, which can be installed (as previously explained);
+│  │     ├─ python [2.7.15|3.6.7|3.7.1], which cannot be installed (as previously explained);
+│  │     ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│  │     ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│  │     ├─ python 3.7.7, which can be installed;
+│  │     └─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+│  └─ protobuf 3.11.4 conflicts with any installable versions previously reported;
+├─ pydot ==1.4.2 py37h89c1867_2 is not installable because it requires
+│  └─ python_abi 3.7.* *_cp37m but there are no viable options
+│     ├─ python_abi 3.7 conflicts with any installable versions previously reported;
+│     └─ python_abi 3.7 would require
+│        └─ python 3.7.* *_cpython, which conflicts with any installable versions previously reported;
+├─ python 3.10**  is installable with the potential options
+│  ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│  ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│  ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│  ├─ python 3.10.8, which cannot be installed (as previously explained);
+│  ├─ python [3.10.13|3.10.14|...|3.9.21], which can be installed (as previously explained);
+│  ├─ python [3.10.2|3.10.4|3.8.13|3.9.12|3.9.13], which can be installed (as previously explained);
+│  ├─ python [3.10.5|3.10.6|...|3.9.16], which can be installed (as previously explained);
+│  ├─ python [3.10.10|3.10.11|...|3.9.18], which can be installed (as previously explained);
+│  ├─ python [3.10.0|3.8.12], which can be installed (as previously explained);
+│  ├─ python [3.10.10|3.10.11|...|3.9.18], which can be installed (as previously explained);
+│  ├─ python [3.10.11|3.11.3|3.8.16|3.9.16], which can be installed (as previously explained);
+│  ├─ python [3.10.12|3.11.4|3.8.17|3.9.17], which can be installed (as previously explained);
+│  ├─ python [3.10.13|3.11.5|3.8.18|3.9.18], which can be installed (as previously explained);
+│  ├─ python [3.10.14|3.11.8|3.11.9|3.8.19|3.9.19], which can be installed (as previously explained);
+│  ├─ python [3.10.14|3.9.19], which can be installed (as previously explained);
+│  └─ python [3.10.15|3.10.16|...|3.9.21], which can be installed (as previously explained);
+├─ readline ==8.0 h7b6447c_0 is not installable because it conflicts with any installable versions previously reported;
+├─ scikit-learn ==0.22.1 py37hd81dba3_0 is installable with the potential options
+│  ├─ scikit-learn 0.22.1 would require
+│  │  └─ blas 1.0 mkl, which can be installed;
+│  └─ scikit-learn 0.22.1 would require
+│     └─ mkl >=2019.4,<2020.0a0 , which conflicts with any installable versions previously reported;
+├─ scipy 1.10.1**  is installable with the potential options
+│  ├─ scipy 1.10.1 would require
+│  │  ├─ python >=3.10,<3.11.0a0  with the potential options
+│  │  │  ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│  │  │  ├─ python 3.10.8, which cannot be installed (as previously explained);
+│  │  │  ├─ python [3.10.13|3.10.14|...|3.9.21], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.2|3.10.4|3.8.13|3.9.12|3.9.13], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.5|3.10.6|...|3.9.16], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.10|3.10.11|...|3.9.18], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.0|3.8.12], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.10|3.10.11|...|3.9.18], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.11|3.11.3|3.8.16|3.9.16], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.12|3.11.4|3.8.17|3.9.17], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.13|3.11.5|3.8.18|3.9.18], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.14|3.11.8|3.11.9|3.8.19|3.9.19], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.14|3.9.19], which can be installed (as previously explained);
+│  │  │  └─ python [3.10.15|3.10.16|...|3.9.21], which can be installed (as previously explained);
+│  │  └─ python_abi 3.10.* *_cp310, which can be installed;
+│  ├─ scipy 1.10.1 would require
+│  │  └─ python >=3.11,<3.12.0a0 , which can be installed (as previously explained);
+│  ├─ scipy 1.10.1 would require
+│  │  ├─ python >=3.11,<3.12.0a0 , which can be installed (as previously explained);
+│  │  └─ python_abi 3.11.* *_cp311, which can be installed;
+│  ├─ scipy 1.10.1 would require
+│  │  ├─ python >=3.8,<3.9.0a0  with the potential options
+│  │  │  ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│  │  │  ├─ python [3.7.10|3.7.11|...|3.9.7], which can be installed (as previously explained);
+│  │  │  ├─ python [3.7.8|3.8.4|3.8.5|3.8.6], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│  │  │  ├─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.13|3.10.14|...|3.9.21], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.2|3.10.4|3.8.13|3.9.12|3.9.13], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.5|3.10.6|...|3.9.16], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.10|3.10.11|...|3.9.18], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.0|3.8.12], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.10|3.10.11|...|3.9.18], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.11|3.11.3|3.8.16|3.9.16], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.12|3.11.4|3.8.17|3.9.17], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.13|3.11.5|3.8.18|3.9.18], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.14|3.11.8|3.11.9|3.8.19|3.9.19], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.15|3.10.16|...|3.9.21], which can be installed (as previously explained);
+│  │  │  ├─ python 3.8.0, which can be installed (as previously explained);
+│  │  │  ├─ python [3.8.0|3.8.1], which can be installed (as previously explained);
+│  │  │  ├─ python [3.8.10|3.9.5|3.9.6], which can be installed (as previously explained);
+│  │  │  ├─ python 3.8.12, which can be installed (as previously explained);
+│  │  │  ├─ python 3.8.13, which can be installed (as previously explained);
+│  │  │  ├─ python [3.8.2|3.8.3], which can be installed (as previously explained);
+│  │  │  ├─ python 3.8.16, which can be installed (as previously explained);
+│  │  │  ├─ python 3.8.20, which can be installed (as previously explained);
+│  │  │  ├─ python 3.8.5, which cannot be installed (as previously explained);
+│  │  │  └─ python 3.8.2 conflicts with any installable versions previously reported;
+│  │  └─ python_abi 3.8.* *_cp38, which can be installed;
+│  ├─ scipy 1.10.1 would require
+│  │  ├─ pypy3.8 >=7.3.11 , which can be installed (as previously explained);
+│  │  └─ pypy3.9 >=7.3.11 , which can be installed (as previously explained);
+│  ├─ scipy 1.10.1 would require
+│  │  ├─ python >=3.9,<3.10.0a0 , which can be installed (as previously explained);
+│  │  └─ python_abi 3.9.* *_cp39, which can be installed;
+│  ├─ scipy 1.10.1 would require
+│  │  └─ mkl >=2023.1.0,<2024.0a0 , which conflicts with any installable versions previously reported;
+│  ├─ scipy 1.10.1 would require
+│  │  └─ mkl >=2021.4.0,<2022.0a0 , which conflicts with any installable versions previously reported;
+│  └─ scipy 1.10.1 would require
+│     └─ blas * openblas but there are no viable options
+│        ├─ blas [1.0|1.1|...|2.9] conflicts with any installable versions previously reported;
+│        ├─ blas [2.0|2.2|2.3] would require
+│        │  └─ libgfortran4 >=7.5.0  but there are no viable options
+│        │     ├─ libgfortran4 7.5.0 would require
+│        │     │  └─ libgfortran-ng 7.5.0 *_18, which conflicts with any installable versions previously reported;
+│        │     ├─ libgfortran4 7.5.0 would require
+│        │     │  └─ libgfortran-ng 7.5.0 *_19, which conflicts with any installable versions previously reported;
+│        │     ├─ libgfortran4 7.5.0 would require
+│        │     │  └─ libgfortran-ng 7.5.0 *_20, which conflicts with any installable versions previously reported;
+│        │     └─ libgfortran4 7.5.0 would require
+│        │        └─ libgfortran-ng 7.5.0 *_17, which conflicts with any installable versions previously reported;
+│        ├─ blas [2.4|2.5|2.6|2.7] would require
+│        │  └─ libblas [3.8.0 4_openblas|3.8.0 5_openblas|3.8.0 6_openblas|3.8.0 7_openblas], which requires
+│        │     └─ openblas 0.3.5.* , which does not exist (perhaps a missing channel);
+│        └─ blas [2.129|2.130] would require
+│           └─ blas-devel [3.9.0 29*_openblas|3.9.0 30*_openblas], which requires
+│              └─ liblapacke [3.9.0 29_he2f377e_openblas|3.9.0 30_he2f377e_openblas], which requires
+│                 └─ mkl >=2024.2.2,<2025.0a0 , which conflicts with any installable versions previously reported;
+├─ six ==1.14.0 py37_0 is not installable because there are no viable options
+│  ├─ six 1.14.0 would require
+│  │  └─ python >=3.7,<3.8.0a0  with the potential options
+│  │     ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│  │     ├─ python [3.7.1|3.7.2|3.7.3], which can be installed (as previously explained);
+│  │     ├─ python 3.7.10, which can be installed (as previously explained);
+│  │     ├─ python 3.7.10, which can be installed (as previously explained);
+│  │     ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│  │     ├─ python [3.7.10|3.7.11|...|3.9.7], which can be installed (as previously explained);
+│  │     ├─ python 3.7.12, which can be installed (as previously explained);
+│  │     ├─ python 3.7.3, which can be installed (as previously explained);
+│  │     ├─ python [3.7.3|3.7.6|3.7.8], which can be installed (as previously explained);
+│  │     ├─ python [3.7.8|3.8.4|3.8.5|3.8.6], which can be installed (as previously explained);
+│  │     ├─ python 3.7.9, which can be installed (as previously explained);
+│  │     ├─ python [2.7.15|3.6.7|3.7.1], which cannot be installed (as previously explained);
+│  │     ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│  │     ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│  │     ├─ python 3.7.7, which can be installed;
+│  │     └─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+│  └─ six 1.14.0 would require
+│     └─ python_abi * *_cp37m, which conflicts with any installable versions previously reported;
+├─ sqlite ==3.31.1 h7b6447c_0 is not installable because it conflicts with any installable versions previously reported;
+├─ statsmodels ==0.12.1 py37ha21ca33_1 is installable and it requires
+│  └─ python >=3.7,<3.8.0a0  with the potential options
+│     ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│     ├─ python [3.7.1|3.7.2|3.7.3], which can be installed (as previously explained);
+│     ├─ python 3.7.10, which can be installed (as previously explained);
+│     ├─ python 3.7.10, which can be installed (as previously explained);
+│     ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│     ├─ python [3.7.10|3.7.11|...|3.9.7], which can be installed (as previously explained);
+│     ├─ python 3.7.12, which can be installed (as previously explained);
+│     ├─ python 3.7.3, which can be installed (as previously explained);
+│     ├─ python [3.7.3|3.7.6|3.7.8], which can be installed (as previously explained);
+│     ├─ python [3.7.8|3.8.4|3.8.5|3.8.6], which can be installed (as previously explained);
+│     ├─ python 3.7.9, which can be installed (as previously explained);
+│     ├─ python [2.7.15|3.6.7|3.7.1], which cannot be installed (as previously explained);
+│     ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│     ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│     ├─ python 3.7.7, which can be installed;
+│     └─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+├─ tensorboard 2.10**  is installable and it requires
+│  └─ werkzeug >=1.0.1 , which can be installed;
+├─ tensorflow-base 2.10**  is installable with the potential options
+│  ├─ tensorflow-base 2.10.0, which cannot be installed (as previously explained);
+│  ├─ tensorflow-base 2.10.0, which cannot be installed (as previously explained);
+│  ├─ tensorflow-base 2.10.0, which can be installed (as previously explained);
+│  ├─ tensorflow-base 2.10.0, which can be installed (as previously explained);
+│  └─ tensorflow-base 2.10.0, which can be installed (as previously explained);
+├─ tensorflow-estimator 2.10**  is installable with the potential options
+│  ├─ tensorflow-estimator 2.10.0 would require
+│  │  ├─ python >=3.7,<3.8.0a0  with the potential options
+│  │  │  ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│  │  │  ├─ python [3.7.1|3.7.2|3.7.3], which can be installed (as previously explained);
+│  │  │  ├─ python 3.7.10, which can be installed (as previously explained);
+│  │  │  ├─ python 3.7.10, which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│  │  │  ├─ python [3.7.10|3.7.11|...|3.9.7], which can be installed (as previously explained);
+│  │  │  ├─ python 3.7.12, which can be installed (as previously explained);
+│  │  │  ├─ python 3.7.3, which can be installed (as previously explained);
+│  │  │  ├─ python [3.7.3|3.7.6|3.7.8], which can be installed (as previously explained);
+│  │  │  ├─ python [3.7.8|3.8.4|3.8.5|3.8.6], which can be installed (as previously explained);
+│  │  │  ├─ python 3.7.9, which can be installed (as previously explained);
+│  │  │  ├─ python [2.7.15|3.6.7|3.7.1], which cannot be installed (as previously explained);
+│  │  │  ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│  │  │  ├─ python 3.7.7, which can be installed;
+│  │  │  └─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+│  │  └─ tensorflow-base 2.10.* , which conflicts with any installable versions previously reported;
+│  ├─ tensorflow-estimator 2.10.0 would require
+│  │  ├─ python_abi 3.10.* *_cp310, which can be installed;
+│  │  └─ tensorflow-base 2.10.0 cpu_py310hc537a0e_0, which can be installed (as previously explained);
+│  ├─ tensorflow-estimator 2.10.0 would require
+│  │  └─ tensorflow-base 2.10.0 cpu_py37h50bd216_0, which can be installed (as previously explained);
+│  ├─ tensorflow-estimator 2.10.0 would require
+│  │  ├─ python_abi 3.8.* *_cp38, which can be installed;
+│  │  └─ tensorflow-base 2.10.0 cpu_py38h67fe383_0, which can be installed (as previously explained);
+│  ├─ tensorflow-estimator 2.10.0 would require
+│  │  ├─ python_abi 3.9.* *_cp39, which can be installed;
+│  │  └─ tensorflow-base 2.10.0 cpu_py39h16601f7_0, which can be installed (as previously explained);
+│  ├─ tensorflow-estimator 2.10.0 would require
+│  │  ├─ python_abi 3.10.* *_cp310, which can be installed;
+│  │  └─ tensorflow-base 2.10.0 cuda112py310hf679b68_0, which cannot be installed (as previously explained);
+│  ├─ tensorflow-estimator 2.10.0 would require
+│  │  └─ tensorflow-base 2.10.0 cuda112py37ha0c8746_0, which cannot be installed (as previously explained);
+│  ├─ tensorflow-estimator 2.10.0 would require
+│  │  ├─ python_abi 3.8.* *_cp38, which can be installed;
+│  │  └─ tensorflow-base 2.10.0 cuda112py38h6b2b66c_0, which cannot be installed (as previously explained);
+│  ├─ tensorflow-estimator 2.10.0 would require
+│  │  ├─ python_abi 3.9.* *_cp39, which can be installed;
+│  │  └─ tensorflow-base 2.10.0 cuda112py39h2957820_0, which cannot be installed (as previously explained);
+│  ├─ tensorflow-estimator 2.10.0 would require
+│  │  └─ python >=3.10,<3.11.0a0  with the potential options
+│  │     ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│  │     ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│  │     ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│  │     ├─ python 3.10.8, which cannot be installed (as previously explained);
+│  │     ├─ python [3.10.13|3.10.14|...|3.9.21], which can be installed (as previously explained);
+│  │     ├─ python [3.10.2|3.10.4|3.8.13|3.9.12|3.9.13], which can be installed (as previously explained);
+│  │     ├─ python [3.10.5|3.10.6|...|3.9.16], which can be installed (as previously explained);
+│  │     ├─ python [3.10.10|3.10.11|...|3.9.18], which can be installed (as previously explained);
+│  │     ├─ python [3.10.0|3.8.12], which can be installed (as previously explained);
+│  │     ├─ python [3.10.10|3.10.11|...|3.9.18], which can be installed (as previously explained);
+│  │     ├─ python [3.10.11|3.11.3|3.8.16|3.9.16], which can be installed (as previously explained);
+│  │     ├─ python [3.10.12|3.11.4|3.8.17|3.9.17], which can be installed (as previously explained);
+│  │     ├─ python [3.10.13|3.11.5|3.8.18|3.9.18], which can be installed (as previously explained);
+│  │     ├─ python [3.10.14|3.11.8|3.11.9|3.8.19|3.9.19], which can be installed (as previously explained);
+│  │     ├─ python [3.10.14|3.9.19], which can be installed (as previously explained);
+│  │     └─ python [3.10.15|3.10.16|...|3.9.21], which can be installed (as previously explained);
+│  ├─ tensorflow-estimator 2.10.0 would require
+│  │  ├─ python >=3.8,<3.9.0a0  with the potential options
+│  │  │  ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│  │  │  ├─ python [3.7.10|3.7.11|...|3.9.7], which can be installed (as previously explained);
+│  │  │  ├─ python [3.7.8|3.8.4|3.8.5|3.8.6], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│  │  │  ├─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.13|3.10.14|...|3.9.21], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.2|3.10.4|3.8.13|3.9.12|3.9.13], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.5|3.10.6|...|3.9.16], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.10|3.10.11|...|3.9.18], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.0|3.8.12], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.10|3.10.11|...|3.9.18], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.11|3.11.3|3.8.16|3.9.16], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.12|3.11.4|3.8.17|3.9.17], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.13|3.11.5|3.8.18|3.9.18], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.14|3.11.8|3.11.9|3.8.19|3.9.19], which can be installed (as previously explained);
+│  │  │  ├─ python [3.10.15|3.10.16|...|3.9.21], which can be installed (as previously explained);
+│  │  │  ├─ python 3.8.0, which can be installed (as previously explained);
+│  │  │  ├─ python [3.8.0|3.8.1], which can be installed (as previously explained);
+│  │  │  ├─ python [3.8.10|3.9.5|3.9.6], which can be installed (as previously explained);
+│  │  │  ├─ python 3.8.12, which can be installed (as previously explained);
+│  │  │  ├─ python 3.8.13, which can be installed (as previously explained);
+│  │  │  ├─ python [3.8.2|3.8.3], which can be installed (as previously explained);
+│  │  │  ├─ python 3.8.16, which can be installed (as previously explained);
+│  │  │  ├─ python 3.8.20, which can be installed (as previously explained);
+│  │  │  ├─ python 3.8.5, which cannot be installed (as previously explained);
+│  │  │  └─ python 3.8.2 conflicts with any installable versions previously reported;
+│  │  └─ tensorflow-base 2.10.* , which conflicts with any installable versions previously reported;
+│  └─ tensorflow-estimator 2.10.0 would require
+│     └─ python >=3.9,<3.10.0a0 , which can be installed (as previously explained);
+├─ tensorflow-gpu 2.10**  is not installable because there are no viable options
+│  ├─ tensorflow-gpu 2.10.0 would require
+│  │  └─ tensorflow 2.10.0 cuda112py310he87a039_0, which cannot be installed (as previously explained);
+│  ├─ tensorflow-gpu 2.10.0 would require
+│  │  └─ tensorflow 2.10.0 cuda112py37h01c6645_0, which cannot be installed (as previously explained);
+│  ├─ tensorflow-gpu 2.10.0 would require
+│  │  └─ tensorflow 2.10.0 cuda112py38hded6998_0, which cannot be installed (as previously explained);
+│  └─ tensorflow-gpu 2.10.0 would require
+│     └─ tensorflow 2.10.0 cuda112py39h01bd6f0_0, which cannot be installed (as previously explained);
+├─ tensorflow 2.10**  is installable with the potential options
+│  ├─ tensorflow 2.10.0, which cannot be installed (as previously explained);
+│  ├─ tensorflow 2.10.0, which cannot be installed (as previously explained);
+│  ├─ tensorflow 2.10.0, which cannot be installed (as previously explained);
+│  ├─ tensorflow 2.10.0, which cannot be installed (as previously explained);
+│  ├─ tensorflow 2.10.0, which can be installed (as previously explained);
+│  ├─ tensorflow 2.10.0, which can be installed (as previously explained);
+│  ├─ tensorflow 2.10.0, which can be installed (as previously explained);
+│  ├─ tensorflow 2.10.0, which can be installed (as previously explained);
+│  └─ tensorflow 2.10.0, which can be installed (as previously explained);
+├─ tk ==8.6.8 hbc83047_0 is not installable because it conflicts with any installable versions previously reported;
+├─ tqdm ==4.67.0 pyhd8ed1ab_0 is installable and it requires
+│  └─ python >=3.7  with the potential options
+│     ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│     ├─ python [3.7.1|3.7.2|3.7.3], which can be installed (as previously explained);
+│     ├─ python 3.7.10, which can be installed (as previously explained);
+│     ├─ python 3.7.10, which can be installed (as previously explained);
+│     ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│     ├─ python [3.7.10|3.7.11|...|3.9.7], which can be installed (as previously explained);
+│     ├─ python 3.7.12, which can be installed (as previously explained);
+│     ├─ python 3.7.3, which can be installed (as previously explained);
+│     ├─ python [3.7.3|3.7.6|3.7.8], which can be installed (as previously explained);
+│     ├─ python [3.7.8|3.8.4|3.8.5|3.8.6], which can be installed (as previously explained);
+│     ├─ python 3.7.9, which can be installed (as previously explained);
+│     ├─ python [2.7.15|3.6.7|3.7.1], which cannot be installed (as previously explained);
+│     ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│     ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│     ├─ python 3.7.7, which can be installed;
+│     ├─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+│     ├─ python 3.10.8, which cannot be installed (as previously explained);
+│     ├─ python [3.10.13|3.10.14|...|3.9.21], which can be installed (as previously explained);
+│     ├─ python [3.10.2|3.10.4|3.8.13|3.9.12|3.9.13], which can be installed (as previously explained);
+│     ├─ python [3.10.5|3.10.6|...|3.9.16], which can be installed (as previously explained);
+│     ├─ python [3.10.10|3.10.11|...|3.9.18], which can be installed (as previously explained);
+│     ├─ python [3.10.0|3.8.12], which can be installed (as previously explained);
+│     ├─ python [3.10.10|3.10.11|...|3.9.18], which can be installed (as previously explained);
+│     ├─ python [3.10.11|3.11.3|3.8.16|3.9.16], which can be installed (as previously explained);
+│     ├─ python [3.10.12|3.11.4|3.8.17|3.9.17], which can be installed (as previously explained);
+│     ├─ python [3.10.13|3.11.5|3.8.18|3.9.18], which can be installed (as previously explained);
+│     ├─ python [3.10.14|3.11.8|3.11.9|3.8.19|3.9.19], which can be installed (as previously explained);
+│     ├─ python [3.10.14|3.9.19], which can be installed (as previously explained);
+│     ├─ python [3.10.15|3.10.16|...|3.9.21], which can be installed (as previously explained);
+│     ├─ python 3.8.0, which can be installed (as previously explained);
+│     ├─ python [3.8.0|3.8.1], which can be installed (as previously explained);
+│     ├─ python [3.8.10|3.9.5|3.9.6], which can be installed (as previously explained);
+│     ├─ python 3.8.12, which can be installed (as previously explained);
+│     ├─ python 3.8.13, which can be installed (as previously explained);
+│     ├─ python [3.8.2|3.8.3], which can be installed (as previously explained);
+│     ├─ python 3.8.16, which can be installed (as previously explained);
+│     ├─ python 3.8.20, which can be installed (as previously explained);
+│     ├─ python 3.8.5, which cannot be installed (as previously explained);
+│     ├─ python 3.8.2 conflicts with any installable versions previously reported;
+│     ├─ python 3.9.0, which can be installed (as previously explained);
+│     ├─ python 3.9.10, which can be installed (as previously explained);
+│     ├─ python 3.9.12, which can be installed (as previously explained);
+│     ├─ python 3.9.16, which can be installed (as previously explained);
+│     ├─ python 3.9.17, which can be installed (as previously explained);
+│     ├─ python 3.9.18, which can be installed (as previously explained);
+│     ├─ python 3.9.18, which can be installed (as previously explained);
+│     ├─ python [3.11.1|3.11.2|...|3.11.8], which can be installed (as previously explained);
+│     ├─ python 3.11.10, which can be installed (as previously explained);
+│     ├─ python 3.11.11, which can be installed (as previously explained);
+│     ├─ python 3.11.9, which can be installed (as previously explained);
+│     ├─ python 3.11.7, which can be installed (as previously explained);
+│     ├─ python [3.12.0|3.12.1|...|3.12.9], which can be installed (as previously explained);
+│     ├─ python [3.12.0rc3|3.13.0rc1|3.13.0rc2|3.13.0rc3], which cannot be installed (as previously explained);
+│     ├─ python [3.13.0|3.13.1|3.13.2], which can be installed (as previously explained);
+│     ├─ python [3.13.0|3.13.1|3.13.2], which can be installed (as previously explained);
+│     ├─ python 3.12.0, which can be installed (as previously explained);
+│     ├─ python 3.12.1, which can be installed (as previously explained);
+│     ├─ python [3.12.2|3.12.3], which can be installed (as previously explained);
+│     ├─ python [3.12.4|3.12.5|...|3.12.9], which can be installed (as previously explained);
+│     └─ python [3.13.0|3.13.1|3.13.2], which can be installed (as previously explained);
+├─ typing_extensions ==4.4.0 py37h06a4308_0 is not installable because there are no viable options
+│  ├─ typing_extensions 4.4.0 would require
+│  │  └─ python >=3.7,<3.8.0a0  with the potential options
+│  │     ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│  │     ├─ python [3.7.1|3.7.2|3.7.3], which can be installed (as previously explained);
+│  │     ├─ python 3.7.10, which can be installed (as previously explained);
+│  │     ├─ python 3.7.10, which can be installed (as previously explained);
+│  │     ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│  │     ├─ python [3.7.10|3.7.11|...|3.9.7], which can be installed (as previously explained);
+│  │     ├─ python 3.7.12, which can be installed (as previously explained);
+│  │     ├─ python 3.7.3, which can be installed (as previously explained);
+│  │     ├─ python [3.7.3|3.7.6|3.7.8], which can be installed (as previously explained);
+│  │     ├─ python [3.7.8|3.8.4|3.8.5|3.8.6], which can be installed (as previously explained);
+│  │     ├─ python 3.7.9, which can be installed (as previously explained);
+│  │     ├─ python [2.7.15|3.6.7|3.7.1], which cannot be installed (as previously explained);
+│  │     ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│  │     ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│  │     ├─ python 3.7.7, which can be installed;
+│  │     └─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+│  └─ typing_extensions 4.4.0 conflicts with any installable versions previously reported;
+├─ werkzeug ==1.0.0 py_0 is not installable because it conflicts with any installable versions previously reported;
+├─ wheel ==0.34.2 py37_0 is installable with the potential options
+│  ├─ wheel 0.34.2 would require
+│  │  └─ python >=3.7,<3.8.0a0  with the potential options
+│  │     ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│  │     ├─ python [3.7.1|3.7.2|3.7.3], which can be installed (as previously explained);
+│  │     ├─ python 3.7.10, which can be installed (as previously explained);
+│  │     ├─ python 3.7.10, which can be installed (as previously explained);
+│  │     ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│  │     ├─ python [3.7.10|3.7.11|...|3.9.7], which can be installed (as previously explained);
+│  │     ├─ python 3.7.12, which can be installed (as previously explained);
+│  │     ├─ python 3.7.3, which can be installed (as previously explained);
+│  │     ├─ python [3.7.3|3.7.6|3.7.8], which can be installed (as previously explained);
+│  │     ├─ python [3.7.8|3.8.4|3.8.5|3.8.6], which can be installed (as previously explained);
+│  │     ├─ python 3.7.9, which can be installed (as previously explained);
+│  │     ├─ python [2.7.15|3.6.7|3.7.1], which cannot be installed (as previously explained);
+│  │     ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│  │     ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│  │     ├─ python 3.7.7, which can be installed;
+│  │     └─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+│  └─ wheel 0.34.2 would require
+│     └─ python_abi * *_cp37m, which conflicts with any installable versions previously reported;
+├─ wrapt ==1.13.3 py37h7f8727e_2 is not installable because there are no viable options
+│  ├─ wrapt 1.13.3 would require
+│  │  └─ python >=3.7,<3.8.0a0  with the potential options
+│  │     ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+│  │     ├─ python [3.7.1|3.7.2|3.7.3], which can be installed (as previously explained);
+│  │     ├─ python 3.7.10, which can be installed (as previously explained);
+│  │     ├─ python 3.7.10, which can be installed (as previously explained);
+│  │     ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+│  │     ├─ python [3.7.10|3.7.11|...|3.9.7], which can be installed (as previously explained);
+│  │     ├─ python 3.7.12, which can be installed (as previously explained);
+│  │     ├─ python 3.7.3, which can be installed (as previously explained);
+│  │     ├─ python [3.7.3|3.7.6|3.7.8], which can be installed (as previously explained);
+│  │     ├─ python [3.7.8|3.8.4|3.8.5|3.8.6], which can be installed (as previously explained);
+│  │     ├─ python 3.7.9, which can be installed (as previously explained);
+│  │     ├─ python [2.7.15|3.6.7|3.7.1], which cannot be installed (as previously explained);
+│  │     ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+│  │     ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+│  │     ├─ python 3.7.7, which can be installed;
+│  │     └─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained);
+│  └─ wrapt 1.13.3 conflicts with any installable versions previously reported;
+├─ xz ==5.2.4 h14c3975_4 is not installable because it conflicts with any installable versions previously reported;
+└─ zipp ==3.11.0 py37h06a4308_0 is installable and it requires
+   └─ python >=3.7,<3.8.0a0  with the potential options
+      ├─ python [2.7.13|2.7.14|...|3.8.2], which can be installed (as previously explained);
+      ├─ python [3.7.1|3.7.2|3.7.3], which can be installed (as previously explained);
+      ├─ python 3.7.10, which can be installed (as previously explained);
+      ├─ python 3.7.10, which can be installed (as previously explained);
+      ├─ python [3.10.0|3.10.1|...|3.9.9], which can be installed (as previously explained);
+      ├─ python [3.7.10|3.7.11|...|3.9.7], which can be installed (as previously explained);
+      ├─ python 3.7.12, which can be installed (as previously explained);
+      ├─ python 3.7.3, which can be installed (as previously explained);
+      ├─ python [3.7.3|3.7.6|3.7.8], which can be installed (as previously explained);
+      ├─ python [3.7.8|3.8.4|3.8.5|3.8.6], which can be installed (as previously explained);
+      ├─ python 3.7.9, which can be installed (as previously explained);
+      ├─ python [2.7.15|3.6.7|3.7.1], which cannot be installed (as previously explained);
+      ├─ python [3.10.0|3.10.3|...|3.9.12], which can be installed (as previously explained);
+      ├─ python [3.10.6|3.10.8|...|3.9.16], which can be installed (as previously explained);
+      ├─ python 3.7.7, which can be installed;
+      └─ python [2.7.18|3.5.6|...|3.8.3], which can be installed (as previously explained).

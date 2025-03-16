@@ -22,3 +22,6 @@ cluster_execution.sh
 transfer-learning-LSTM-master.zip
 df_kwh_adjusted.csv
 solar_AL.txt
+
+./PackageList/cuda_12.1.0_530.30.02_linux.run
+cuda_12.1.0_530.30.02_linux.run
