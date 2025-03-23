@@ -1,11 +1,12 @@
 import random
 import argparse # 解析命令列參數
 import json
+import os
 from os import path, getcwd, makedirs, environ, listdir
 import shutil
+import numpy as np
 
 import tensorflow as tf
-import numpy as np
 import keras
 from sklearn.model_selection import train_test_split
 from keras.models import load_model
@@ -15,12 +16,27 @@ from keras.callbacks import CSVLogger, ModelCheckpoint, ReduceLROnPlateau, Early
     # ↑ 區塊長度的意義：區塊長度越長，數據的時間依賴性被保留得越多，但隨機性減少；區塊長度越短，數據更具隨機性，但可能失去時間依賴信息。
     # from recombinator.block_bootstrap import circular_block_bootstrap # 用於對具有時間依賴性的數據進行重抽樣，在不打破數據時間依賴性的情況下生成新的數據。採用的是循環抽樣的方式，這意味著當抽樣到序列尾端時，可以回到序列開頭繼續抽樣。
 
-from utils.model import build_model, rmse
-from utils.data_io import (
-    read_data_from_dataset,
-    ReccurentTrainingGenerator,
-    ReccurentPredictingGenerator
-)
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import TensorDataset, DataLoader
+import torch.utils.cpp_extension
+
+# 取得原始 include_paths()，避免遞迴呼叫自己
+_original_include_paths = torch.utils.cpp_extension.include_paths
+
+def include_paths_patched(*args, **kwargs):
+    if 'cuda' in kwargs:
+        del kwargs['cuda']  # 移除不支援的參數
+    return _original_include_paths(*args, **kwargs)
+
+torch.utils.cpp_extension.include_paths = include_paths_patched # 進行 Monkey Patch
+print("✅ Patched torch.utils.cpp_extension.include_paths successfully!")
+
+import xlstm  # 這行一定要放在 Monkey Patch 之後
+
+from utils.model import build_model, rmse, train_model
+from utils.data_io import read_data_from_dataset
 from utils.save import save_lr_curve, save_prediction_plot, save_yy_plot, save_mse, ResidualPlot, ErrorHistogram
 from utils.device import limit_gpu_memory # 限制 TensorFlow 對 GPU 記憶體的預留或使用量。
 from Ensemble import start_ensemble # 整體學習
@@ -76,7 +92,7 @@ def seed_every_thing(seed=1234): # 確保各種隨機操作（如資料分割、
     environ['PYTHONHASHSEED'] = str(seed) # 設定Python的雜湊隨機種子，確保Python的雜湊行為在每次執行時保持一致。
     np.random.seed(seed) # 設定NumPy的隨機種子，確保 NumPy 產生的隨機數在每次執行時相同。
     random.seed(seed) # 設定Python標準庫的隨機種子，確保Python標準庫中的隨機數生成器在每次執行時產生相同的結果。
-    tf.random.set_random_seed(seed) # 設定TensorFlow的隨機種子，確保TensorFlow產生的隨機數在每次執行時一致。
+    tf.random.set_seed(seed)  # TensorFlow 2.x 設定隨機種子的正確方式，確保TensorFlow產生的隨機數在每次執行時一致。
 
 
 def save_arguments(args, out_dir): # 旨在將參數字典 args 以 JSON 格式保存到指定的輸出目錄 out_dir 中
@@ -85,14 +101,32 @@ def save_arguments(args, out_dir): # 旨在將參數字典 args 以 JSON 格式�
         json.dump(args, f, indent=4)
 
 
-def make_callbacks(file_path, save_csv=True):
-    reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.5, verbose=1, patience=4, min_lr=1e-7) # 降低學習率，以促進模型更好地收斂。
-    model_checkpoint = ModelCheckpoint(filepath=file_path, monitor='val_loss', save_best_only=True) # 保存最佳模型。 # -- save_weights_only = True,
-    early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True) 
-    if not save_csv:
-        return [reduce_lr, model_checkpoint, early_stopping]
-    csv_logger = CSVLogger(path.join(path.dirname(file_path), 'epoch_log.csv')) # 將每個訓練週期的損失和評估指標記錄到 CSV 文件中
-    return [reduce_lr, model_checkpoint, csv_logger, early_stopping] 
+# def make_callbacks(file_path, save_csv=True):
+#     # reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.5, verbose=1, patience=4, min_lr=1e-7) # 降低學習率，以促進模型更好地收斂。
+#     model_checkpoint = ModelCheckpoint(filepath=file_path, monitor='val_loss', save_best_only=True) # 保存最佳模型。 # -- save_weights_only = True,
+#     # early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True) 
+#     if not save_csv:
+#         return [reduce_lr, model_checkpoint, early_stopping]
+#     csv_logger = CSVLogger(path.join(path.dirname(file_path), 'epoch_log.csv')) # 將每個訓練週期的損失和評估指標記錄到 CSV 文件中
+#     return [reduce_lr, model_checkpoint, csv_logger, early_stopping] 
+
+
+def create_sliding_window(X, y, sequence_length):
+    """
+    使用滑動窗口方法，將時間序列轉換為 (batch_size, sequence_length, features) 格式。
+    將原始的時間序列資料 (X) 切成「一小段一小段的序列片段」給 LSTM 使用，因為 LSTM 要吃的是 (batch_size, sequence_length, features) 格式的資料。
+    :param X: 原始特徵數據 (samples, features)
+    :param y: 標籤數據 (samples,)
+    :param sequence_length: LSTM 所需的時間步長
+    sequence_length=1440 代表我要用「前 1440 筆資料」去預測「第 1441 筆的值」。
+    :return: 滑動窗口格式的 X 和 y
+    """
+    X_seq, y_seq = [], []
+    total_samples = len(X)
+    for i in range(total_samples - sequence_length): # for 迴圈切出每一組序列樣本
+        X_seq.append(X[i: i + sequence_length])  # 取 sequence_length 長度的區間
+        y_seq.append(y[i + sequence_length])  # 預測 sequence_length 之後的值
+    return np.array(X_seq), np.array(y_seq)
  
 
 def main():
@@ -116,54 +150,89 @@ def main():
             if not path.exists(f'{data_dir_path}/X_train.pkl'): continue
             
             # make output directory
-            write_result_out_dir = path.join(write_out_dir, args["train_mode"], source)
+            write_result_out_dir = path.join(write_out_dir, args["train_mode"], source) # 指定結果檔案(含模型)的保存路徑
             makedirs(write_result_out_dir, exist_ok=True)
             
             # load dataset
             X_train, y_train, X_test, y_test = \
                 read_data_from_dataset(data_dir_path) # 讀取'X_train', 'y_train', 'X_test', 'y_test'資料
-            period = 1440  # period：表示時間步數（time steps），即模型一次看多少步的歷史數據來進行預測。下採樣後將資料降為成每分鐘一個數據點，以 1 天 = 1440 分鐘進行觀察。
             X_train = np.concatenate((X_train, X_test), axis=0)  # > no need for test data when pre-training
             y_train = np.concatenate((y_train, y_test), axis=0)  # > no need for test data when pre-training
             X_train, X_valid, y_train, y_valid =  \
                 train_test_split(X_train, y_train, test_size=args["valid_ratio"], shuffle=False) # 不隨機打亂數據 (shuffle=False)
             print(f'\nSource dataset : {source}')
-            print(f'\nX_train : {X_train.shape[0]}')
-            print(f'\nX_valid : {X_valid.shape[0]}')
+            print(f"📌 X_train.shape: {X_train.shape}")  # 查看訓練數據形狀
+            print(f"📌 X_valid.shape: {X_valid.shape}")  # 查看訓練數據形狀
             print(f'切分比例: {args["valid_ratio"]}')
-            print(f'period:{period}, args["nb_batch"]: {args["nb_batch"]}')
             
             # construct the model
-            file_path = path.join(write_result_out_dir, 'best_model.hdf5') # 指定模型的保存路徑
-            callbacks = make_callbacks(file_path) # 在訓練過程中保存最佳模型
-            input_shape = (period, X_train.shape[1]) # (timesteps, features)，period表示時間步數，X_train.shape[1]為欄位特徵。
-            model = build_model(input_shape, args["gpu"], write_result_out_dir)
-            
-            # train the model
+            sequence_length = 1440  # (period) 表示時間步數（time steps），即模型一次看多少步的歷史數據來進行預測。下採樣後將資料降為成每分鐘一個數據點，以 1 天 = 1440 分鐘進行觀察。
+            input_shape = (sequence_length, X_train.shape[1]) # (timesteps, features)，period表示時間步數，X_train.shape[1]為欄位特徵。
+            input_dim = X_train.shape[1]  # 取得資料集的特徵數
+            print(f'sequence_length:{sequence_length}, args["nb_batch"]: {args["nb_batch"]}')
+            model, device = build_model(input_shape=(sequence_length, input_dim), gpu=True)
+
+            # TODO: Delete
+            # 測試模型輸入輸出的正確性 (確認模型正確運行)
+            # print("開始測試模型的輸出...")
+            # x_input = torch.randn(4, sequence_length, input_dim).to(device) # 測試輸入 batch_size=4, sequence_length, features
+            # output = model(x_input)
+            # 檢查輸出形狀是否正確
+            # expected_shape = (4, 1)  # 假設輸出維度是 1
+            # assert output.shape == torch.Size(expected_shape), f"模型輸出 shape 錯誤: {output.shape}，應為 {expected_shape}"
+            # print(f"測試成功！模型輸出 shape: {output.shape}\n")  # (batch_size, output_dim)
+
+            # **進行訓練**
+            # 重新塑形數據，使其符合 (samples, sequence_length, features)
+            # ✅ 把原本的訓練和驗證資料轉換成適合 LSTM 的格式，確保 X_train 形狀正確。
+            X_train_seq, y_train_seq = create_sliding_window(X_train, y_train, sequence_length=1440) # 創建訓練數據
+            X_valid_seq, y_valid_seq = create_sliding_window(X_valid, y_valid, sequence_length=1440) # 創建驗證數據
+            # ✅ 轉換為 PyTorch tensor 格式
+            # 轉成 tensor 是為了讓模型能使用 GPU 加速訓練。
+            X_train_tensor = torch.tensor(X_train_seq, dtype=torch.float32) # 創建訓練數據
+            y_train_tensor = torch.tensor(y_train_seq, dtype=torch.float32)
+            X_valid_tensor = torch.tensor(X_valid_seq, dtype=torch.float32) # 創建驗證數據
+            y_valid_tensor = torch.tensor(y_valid_seq, dtype=torch.float32)
+            # ✅ 建立 PyTorch DataLoader
+            # 把輸入和對應的標籤包成一組，方便 DataLoader 抽樣。
+            train_dataset = TensorDataset(X_train_tensor, y_train_tensor) # 創建訓練數據
+            val_dataset = TensorDataset(X_valid_tensor, y_valid_tensor) # 創建驗證數據
+            # ✅ 分批讀取資料
+            # shuffle=False：不打亂順序（時間序列通常要保留時間順序）
+            # drop_last=False：保留最後不足一整批的資料
             bsize = len(y_train) // args["nb_batch"] # 計算批次大小batch_size # --min
             print(f'計算批次大小batch_size: {bsize}')
-            RTG = ReccurentTrainingGenerator(X_train, y_train, batch_size=bsize, timesteps=period, delay=1) # 創建訓練數據
-            RVG = ReccurentTrainingGenerator(X_valid, y_valid, batch_size=bsize, timesteps=period, delay=1) # 創建驗證數據
+            train_loader = DataLoader(train_dataset, batch_size=bsize, shuffle=False, drop_last=False) 
+            val_loader = DataLoader(val_dataset, batch_size=bsize, shuffle=False, drop_last=False) 
+            
+            # train the model
             print('開始訓練model模型（Pre-Train）')
-            Record_args_while_training(write_out_dir, args["train_mode"], source, args['nb_batch'], bsize, period, data_size=(len(y_train) + len(y_test)))
-            H = model.fit_generator(RTG, validation_data=RVG, epochs=args["nb_epochs"], verbose=1, callbacks=callbacks) # 訓練模型
-            save_lr_curve(H, write_result_out_dir, source) # 保存每個epoch的學習曲線
+            Record_args_while_training(write_out_dir, args["train_mode"], source, args['nb_batch'], bsize, sequence_length, data_size=(len(y_train) + len(y_test))) # 記錄參數
+            model, train_loss, val_loss, optimizer = train_model(model, train_loader, val_loader, num_epochs=args["nb_epochs"], save_file_path=write_result_out_dir,
+                                                                learning_rate=1e-4, device=device, early_stop_patience=10, monitor="val_loss")
+            save_lr_curve(train_loss, val_loss, write_result_out_dir, source) # 保存每個epoch的學習曲線
 
             # prediction (進行預測並保存結果) 使用Testing資料試著預測。
-            RPG = ReccurentPredictingGenerator(X_test, batch_size=1, timesteps=period) # 生成測試數據。
-            y_test_pred = model.predict_generator(RPG) # 預測測試數據
+            model.eval() # 確保模型處於評估模式
+            X_test_seq, y_test_seq = create_sliding_window(X_test, y_test, sequence_length=1440)  # 創建時序窗口
+            X_test_tensor = torch.tensor(X_test_seq, dtype=torch.float32).to(device) # 轉換 X_test 為 PyTorch tensor
+            # 進行推理
+            with torch.no_grad():
+                y_test_pred = model(X_test_tensor)
+            y_test_pred = y_test_pred.cpu().numpy() # 轉換為 numpy 陣列以供繪圖
+           
             # save log for the model (計算誤差指標並保存結果)
             y_test = y_test[-len(y_test_pred):] # 將y_test的長度調整為與 y_test_pred（模型預測值）的長度一致，確保在進行計算和可視化時，兩者長度相符。
             save_prediction_plot(y_test, y_test_pred, write_result_out_dir) # 繪製y_test與y_test_pred的對比圖，展示預測值與實際值的偏差 (折線圖)
             save_yy_plot(y_test, y_test_pred, write_result_out_dir) # 繪製y_test與y_test_pred的對比圖，展示預測值與實際值的偏差 (散點圖)
-            mse_score, rmse_loss, mae_loss, mape_loss, msle_loss, r2 = save_mse(y_test, y_test_pred, write_result_out_dir, model=model) # 計算y_test和y_test_pred之間的均方誤差（MSE）分數，同時將模型摘要資訊寫入文件。
+            mse_score, rmse_loss, mae_loss, mape_loss, msle_loss, r2 = save_mse(y_test, y_test_pred, write_result_out_dir, model=model, sequence_length=sequence_length, input_dim=input_dim) # 計算y_test和y_test_pred之間的均方誤差（MSE）分數，同時將模型摘要資訊寫入文件。
             args["MAE Loss"] = mae_loss
             args["MSE Loss"] = mse_score
             args["RMSE Loss"] = rmse_loss
             args["MAPE Loss"] = mape_loss
             args["MSLE Loss"] = msle_loss
             args["R2 Score"] = r2
-            Learning_Rate = model.optimizer.get_config()["learning_rate"] # 取得初始學習率
+            Learning_Rate = optimizer.param_groups[0]["lr"] # 取得初始學習率
             args["Learning Rate"] = Learning_Rate
             save_arguments(args, write_result_out_dir) # 保存訓練參數 (args) 到結果輸出目錄中。
             ResidualPlot(y_test, y_test_pred, write_result_out_dir)
