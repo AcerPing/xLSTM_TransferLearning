@@ -6,7 +6,12 @@ for dname in listdir('source'): # 計算source底下訓練資料集的樣本數�
     n_features = 0
     n_samples = 0
     for fname in listdir(path.join('source',dname)):
-        with open(path.join('source',dname,fname),'rb') as f:
+        full_path = path.join('source', dname, fname)
+        if not path.isfile(full_path):  # **跳過資料夾**
+            continue
+        if not fname.endswith('.pkl'): # **確保只讀取 .pkl 檔案**
+            continue
+        with open(full_path,'rb') as f:
             data = pickle.load(f)
         # print(f'{fname.replace("pkl","")} : {data.shape}')
         if fname == "X_train.pkl" or fname == "X_test.pkl":
@@ -21,7 +26,12 @@ for dname in listdir('target'): # 統計target底下訓練和測試資料的樣�
     n_features = 0
     n_samples = 0
     for fname in listdir(path.join('target',dname)):
-        with open(path.join('target',dname,fname),'rb') as f:
+        full_path = path.join('target', dname, fname)
+        if not path.isfile(full_path):  # **跳過資料夾**
+            continue
+        if not fname.endswith('.pkl'): # **確保只讀取 .pkl 檔案**
+            continue
+        with open(full_path,'rb') as f:
             data = pickle.load(f)
         # print(f'{fname.replace("pkl","")} : {data.shape}')
         if fname == "X_train.pkl" or fname == "X_test.pkl":
