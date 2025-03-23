@@ -132,7 +132,7 @@ def create_sliding_window(X, y, sequence_length):
 def main():
 
     # make analysis environment
-    limit_gpu_memory() # 限制GPU記憶體使用量，避免因為分配過多而造成系統不穩定。然而當使用量超出設定的限制後，仍然可能發生OOM錯誤。
+    limit_gpu_memory() #  限制TensorFlow在使用GPU時的記憶體佔用方式，避免因為分配過多而造成系統不穩定。然而當使用量超出設定的限制後，仍然可能發生OOM錯誤。
     args = parse_arguments() # 解析參數
     seed_every_thing(args["seed"]) # 設定隨機種子，在每次運行時產生一致的結果。
     write_out_dir = path.normpath(path.join(getcwd(), 'reports', args["out_dir"])) # 輸出文件的存放路徑
