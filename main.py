@@ -39,7 +39,7 @@ from utils.model import build_model, rmse, train_model
 from utils.data_io import read_data_from_dataset
 from utils.save import save_lr_curve, save_prediction_plot, save_yy_plot, save_mse, ResidualPlot, ErrorHistogram
 from utils.device import limit_gpu_memory # 限制 TensorFlow 對 GPU 記憶體的預留或使用量。
-from Ensemble import start_ensemble # 整體學習
+# from Ensemble import start_ensemble # 整體學習 # ?? 需要修改  ImportError: cannot import name 'ReccurentPredictingGenerator' from 'utils.data_io'
 from reports.Record_args_while_training import Record_args_while_training # 紀錄訓練時的nb_batch、bsize、period
 from reports.Metrics_Comparison import metrics_comparison # 比較 Transfer-Learning遷移學習 vs. Without-Transfer-Learning不使用遷移學習
 from reports.output import MSE_Improvement, MAE_Improvement # 比較 Transfer-Learning遷移學習 vs. Without-Transfer-Learning不使用遷移學習
