@@ -100,7 +100,7 @@ def save_arguments(args, out_dir): # 旨在將參數字典 args 以 JSON 格式�
     with open(path_arguments, mode="w") as f:
         json.dump(args, f, indent=4)
 
-
+# TODO: Delete
 # def make_callbacks(file_path, save_csv=True):
 #     # reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.5, verbose=1, patience=4, min_lr=1e-7) # 降低學習率，以促進模型更好地收斂。
 #     model_checkpoint = ModelCheckpoint(filepath=file_path, monitor='val_loss', save_best_only=True) # 保存最佳模型。 # -- save_weights_only = True,
@@ -171,16 +171,6 @@ def main():
             input_dim = X_train.shape[1]  # 取得資料集的特徵數
             print(f'sequence_length:{sequence_length}, args["nb_batch"]: {args["nb_batch"]}')
             model, device = build_model(input_shape=(sequence_length, input_dim), gpu=True)
-
-            # TODO: Delete
-            # 測試模型輸入輸出的正確性 (確認模型正確運行)
-            # print("開始測試模型的輸出...")
-            # x_input = torch.randn(4, sequence_length, input_dim).to(device) # 測試輸入 batch_size=4, sequence_length, features
-            # output = model(x_input)
-            # 檢查輸出形狀是否正確
-            # expected_shape = (4, 1)  # 假設輸出維度是 1
-            # assert output.shape == torch.Size(expected_shape), f"模型輸出 shape 錯誤: {output.shape}，應為 {expected_shape}"
-            # print(f"測試成功！模型輸出 shape: {output.shape}\n")  # (batch_size, output_dim)
 
             # **進行訓練**
             # 重新塑形數據，使其符合 (samples, sequence_length, features)
