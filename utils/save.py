@@ -1,41 +1,43 @@
 from os import path
-
+from copy import deepcopy
 from sklearn.metrics import mean_squared_error as mse, mean_absolute_error as mae, r2_score
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
 from matplotlib import font_manager
 
+# from torchsummary import summary
+from torchinfo import summary # 建議 先安裝torchinfo後，再安裝torch。
 
 # matplotlib 字體設定
 plt.rcParams["font.size"] = 13
 # 設定中文字體，例如 Noto Sans CJK 字體為默認字體
 font_path = '/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc'
 chinese_font = font_manager.FontProperties(fname=font_path)
-matplotlib.rcParams['font.family'] = ['Noto Sans CJK SC', chinese_font.get_name()] + matplotlib.rcParams['font.family']
+matplotlib.rcParams['font.family'] = [chinese_font.get_name()] + matplotlib.rcParams['font.family']
+matplotlib.rcParams['font.sans-serif'] = [chinese_font.get_name()] + matplotlib.rcParams['font.sans-serif'] # 其他備選字體
 matplotlib.rcParams['axes.unicode_minus'] = False  # 解決負號顯示問題
-matplotlib.rcParams['font.sans-serif'] = ['Noto Sans CJK SC'] + matplotlib.rcParams['font.sans-serif'] # 其他備選字體
 
 
-def save_lr_curve(H, out_dir: str, f_name=None):
-    """save learning curve in deep learning
-
+def save_lr_curve(train_loss, val_loss, out_dir: str, f_name=None):
+    """
+    save learning curve in deep learning
     Args:
         model : trained model (keras)
         out_dir (str): directory path for saving
     """
+    if not isinstance(train_loss, list) or not isinstance(val_loss, list): raise TypeError("❌ train_loss 和 val_loss 必須是 list 類型！")
     f_name = 'Learning Curve' if not f_name else f'{f_name} Learning Curve' # 檔名
     plt.figure(figsize=(30, 10)) # 建立圖表
     plt.rcParams["font.size"] = 18 # 字體大小為 18。
-    plt.plot(H.history['loss'], label='Train', marker='o', markersize=5) # 繪製訓練損失曲線
-    plt.plot(H.history['val_loss'], label='Validation', marker='s', markersize=5) # 繪製驗證損失曲線
+    plt.plot(train_loss, label='Train Loss', marker='o', markersize=5) # 繪製訓練損失曲線
+    plt.plot(val_loss, label='Validation Loss', marker='s', markersize=5) # 繪製驗證損失曲線
     # Add value annotations
-    for i, value in enumerate(H.history['loss']):
-        if i % 10 == 0:  # 每隔 10 個數據點標一次
-            plt.annotate(f'{value:.4f}', xy=(i, value), xytext=(0, 5), textcoords='offset points', ha='center', va='bottom', fontsize=12, color='blue', alpha=0.9)
-    for i, value in enumerate(H.history['val_loss']):
-        if i % 10 == 0:  # 每隔 10 個數據點標一次
-            plt.annotate(f'{value:.4f}', xy=(i, value), xytext=(0, -5), textcoords='offset points', ha='center', va='top', fontsize=12, color='orange', alpha=0.9)
+    for i in range(0, len(train_loss), max(1, len(train_loss)//10)):  # 每 10 個數據點標一次
+        plt.annotate(f'{train_loss[i]:.4f}', xy=(i, train_loss[i]), xytext=(0, 5), textcoords='offset points', ha='center', va='bottom', fontsize=12, color='blue', alpha=0.9)
+    # Add value annotations for validation loss
+    for i in range(0, len(val_loss), max(1, len(val_loss)//10)):  # 每 10 個數據點標一次
+        plt.annotate(f'{val_loss[i]:.4f}', xy=(i, val_loss[i]), xytext=(0, -5), textcoords='offset points', ha='center', va='top', fontsize=12, color='orange', alpha=0.9)
     plt.title(f'{f_name} (Model Loss)', fontsize=18)
     plt.ylabel('MSE Loss', fontsize=16)
     plt.xlabel('Epoch', fontsize=16)
@@ -124,9 +126,9 @@ def _rmse(mse_loss): # 因為Keras並未內建RMSE作為指標，需要自行定
     return rmse_loss
 
 
-def save_mse(y_test_time: np.array, y_pred_test_time: np.array, out_dir: str, model=None):
-    """save mean squared error for tareget variable
-
+def save_mse(y_test_time: np.array, y_pred_test_time: np.array, out_dir: str, model=None, sequence_length=1440, input_dim=5):
+    """
+    save mean squared error for tareget variable
     Args:
         y_test_time (np.array): observed data for target variable # 實際值
         y_pred_test_time (np.array): predicted data for target variable # 預測值
@@ -151,8 +153,22 @@ def save_mse(y_test_time: np.array, y_pred_test_time: np.array, out_dir: str, mo
         f.write('MSLE預測誤差值 : {:.6f}\n'.format(msle_loss))
         f.write('R2 Score : {:.6f}\n'.format(r2))
         f.write('=' * 65 + '\n')
-        if model:
-            model.summary(print_fn=lambda x: f.write(x + '\n')) # 將模型摘要資訊寫入文件。
+        if model: # **改用 PyTorch summary**
+            f.write("\n=== Model Summary ===\n")
+            model_cpu = deepcopy(model).to("cpu")  # **創建模型的副本並移到 CPU**
+            f.write(str(model_cpu) + '\n')  # 直接寫入模型結構
+            f.write('\n')
+
+            # ✅ 逐層記錄模型資訊
+            # f.write("\n=== Model Layers ===\n")
+            # for name, module in model_cpu.named_modules():
+            #     f.write(f"{name}: {module}\n")
+
+            summary_str = summary(model_cpu, input_size=(1, sequence_length, input_dim), device='cpu', col_names=["input_size", "output_size", "num_params", "mult_adds"], depth=3, verbose=0)  # 適用於PyTorch，且torchsummary.summary() 這個函數不支援GPU模型。
+            # depth=3。depth：限制解析深度，避免展開過多層。
+            # verbose=0  防止在終端輸出，專注於寫入文件
+            f.write(str(summary_str) + '\n')
+
     return mse_loss, rmse_loss, mae_loss, mape_loss, msle_loss, r2
 
 
