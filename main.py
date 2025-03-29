@@ -396,10 +396,10 @@ def main():
             # === 執行預測 ===    # y_test_pred = best_model.predict_generator(RPG) # 預測測試數據
             y_test_pred = []
             with torch.no_grad():  # 不計算梯度
-                for (x_batch,) in test_loader:
-                    x_batch = x_batch.to("cuda" if torch.cuda.is_available() else "cpu")
-                    pred = best_model(x_batch)
-                    y_test_pred.append(pred.cpu().numpy())
+                for (x_batch,) in test_loader: # 每次從 test_loader 拿出一筆 (batch_size=1)
+                    x_batch = x_batch.to("cuda" if torch.cuda.is_available() else "cpu") # 將資料送入 GPU or CPU
+                    pred = best_model(x_batch) # 執行預測（forward），這一行就是預測的核心。
+                    y_test_pred.append(pred.cpu().numpy()) # 預測結果轉為numpy，加入列表中
             y_test_pred = np.concatenate(y_test_pred, axis=0)  # 合併所有預測結果
 
             # save log for the model (計算MSE誤差和保存結果)
