@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 import matplotlib
 from matplotlib import font_manager
 
-# from torchsummary import summary
 from torchinfo import summary # 建議 先安裝torchinfo後，再安裝torch。
 
 # matplotlib 字體設定
