@@ -1,0 +1,21 @@
+{
+    "out_dir": "IoTpond_Result",
+    "seed": 1234,
+    "train_ratio": 0.8,
+    "time_window": 1000,
+    "train_mode": "without-transfer-learning",
+    "gpu": true,
+    "nb_epochs": 500,
+    "nb_batch": 100,
+    "noise_var": 0.0001,
+    "valid_ratio": 0.2,
+    "freeze": false,
+    "train_verbose": 1,
+    "MAE Loss": 1.1801430895992764,
+    "MSE Loss": 1.5040906293367198,
+    "RMSE Loss": 1.2264137268217117,
+    "MAPE Loss": 400.40180801422036,
+    "MSLE Loss": NaN,
+    "R2 Score": -56.22460713813478,
+    "Learning Rate": 5e-05
+}
