@@ -17,7 +17,9 @@ def MSE_Improvement(out_dir, train_mode):
     makedirs(base_out_dir, exist_ok=True)
 
     source_relative_path = path.join(out_dir, 'pre-train')
-    source_dir = [f for f in listdir(source_relative_path) if path.isdir(path.join(source_relative_path, f))]
+    source_dir = [f for f in listdir(source_relative_path) 
+                  if path.isdir(path.join(source_relative_path, f)) and
+                  path.exists(path.join(source_relative_path, f, "log.txt"))]
     target_relative_path = path.join(out_dir, 'transfer-learning (Unfreeze)') # TODO: 需要修改指定路徑!
     target_dir = [f for f in listdir(target_relative_path) if path.isdir(path.join(target_relative_path, f))]
     
@@ -120,7 +122,9 @@ def MAE_Improvement(out_dir, train_mode):
     # make output base directory (建立輸出目錄)
     base_out_dir = path.join(out_dir, train_mode)
     source_relative_path = path.join(out_dir, 'pre-train')
-    source_dir = [f for f in listdir(source_relative_path) if path.isdir(path.join(source_relative_path, f))]
+    source_dir = [f for f in listdir(source_relative_path) 
+                  if path.isdir(path.join(source_relative_path, f)) and
+                  path.exists(path.join(source_relative_path, f, "log.txt"))]
     target_relative_path = path.join(out_dir, 'transfer-learning (Unfreeze)') # TODO: 需要修改指定路徑!
     target_dir = [f for f in listdir(target_relative_path) if path.isdir(path.join(target_relative_path, f))]
     

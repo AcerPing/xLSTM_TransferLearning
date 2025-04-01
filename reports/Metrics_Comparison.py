@@ -13,7 +13,9 @@ def metrics_comparison(out_dir, train_mode):
     makedirs(base_out_dir, exist_ok=True)
 
     source_relative_path = path.join(out_dir, 'pre-train')
-    source_dir = [f for f in listdir(source_relative_path) if path.isdir(path.join(source_relative_path, f))]
+    source_dir = [f for f in listdir(source_relative_path) 
+                  if path.isdir(path.join(source_relative_path, f)) and
+                  path.exists(path.join(source_relative_path, f, "log.txt"))]
     target_relative_path = path.join(out_dir, 'transfer-learning (Unfreeze)') # TODO: 需要修改指定路徑!
     target_dir = [f for f in listdir(target_relative_path) if path.isdir(path.join(target_relative_path, f))]
     
@@ -125,7 +127,3 @@ def metrics_comparison(out_dir, train_mode):
     # 打印完成訊息
     print("表格已整理完成並保存。")
     
-
-# out_dir = r'D:\HoChePing\北科大_碩班_AI學程\期刊研究\使用LSTM模型預測福壽雞隻重量\Code程式碼\Fwusow_LSTM_TransferLearning\reports\IoTpond_Result'
-# train_mode = r'comparison'
-# comparison(out_dir, train_mode)
