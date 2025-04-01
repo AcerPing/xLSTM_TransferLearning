@@ -162,7 +162,7 @@ class xLSTMModel(nn.Module): # 創建xLSTM
         slstm_config = sLSTMBlockConfig() if use_slstm else None # 如果 use_slstm = True，就會建立一個 sLSTMBlockConfig 實例。 # -- num_heads=8
         if slstm_config and hasattr(slstm_config, "num_heads"): # 如果啟用了 sLSTM，並且有num_heads，則檢查 num_heads
             # hasattr(obj, "attr") => 用來檢查某個物件 (obj) 是否 有某個屬性 (attr)。
-            print(f"🔍 Debug: sLSTMBlockConfig.num_heads = {slstm_config.num_heads}")
+            # print(f"🔍 Debug: sLSTMBlockConfig.num_heads = {slstm_config.num_heads}")
             pass
         else:
             print(f"⚠️ Warning: sLSTMBlockConfig 沒有 `num_heads` 屬性，請檢查其定義！")
@@ -182,6 +182,7 @@ class xLSTMModel(nn.Module): # 創建xLSTM
         self.xlstm_stack = xLSTMBlockStack(self.xlstm_config) # 將剛剛建立好的 xLSTMBlockStackConfig 配置，傳入 xLSTMBlockStack 做實例化，逐層判斷要放哪個 block，建立一個「多層堆疊的 xLSTM block」堆疊體。
         self.batch_norm = nn.BatchNorm1d(embedding_dim) # 加入BatchNormalization批次正規化，幫助穩定訓練。 # ! 因為作用在 (batch, features, time)，所以要 permute() 兩次。
         self.fc = nn.Linear(embedding_dim, output_dim) # 全連接層(fc)，最後只取 最後一個時間步的輸出 → 做線性轉換 → 輸出預測值。
+        self.activation = nn.Sigmoid()  # 在模型尾端加上 sigmoid 讓輸出限制在 0～1 # ! Need ToDo 
 
     def forward(self, x):
         """
@@ -200,6 +201,7 @@ class xLSTMModel(nn.Module): # 創建xLSTM
         x = self.batch_norm(x)   # 透過批次正規化，使訓練更穩定
         x = x.permute(0, 2, 1)   # 變回 (batch_size, sequence_length, embedding_dim)
         x = self.fc(x[:, -1, :])  # 全連接層輸出，取最後一個時間步的輸出來做預測。
+        x = self.activation(x)  # 在模型尾端加上 sigmoid 讓輸出限制在 0～1 # ! Need ToDo 
         return x
     
 

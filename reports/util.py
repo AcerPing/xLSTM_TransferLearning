@@ -235,9 +235,9 @@ def dataset_idx_vs_improvement (out_dir, train_mode, diff_cal=None) :
     plt.rcParams["ytick.direction"] = "in" # 控制Matplotlib圖表的y軸刻度線方向。"in"：刻度線指向圖表內部。
     font_path = '/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc'
     chinese_font = font_manager.FontProperties(fname=font_path)
-    rcParams['font.family'] = ['Noto Sans CJK SC', chinese_font.get_name()] + rcParams['font.family']
+    rcParams['font.family'] = [chinese_font.get_name()] + rcParams['font.family']
     rcParams['axes.unicode_minus'] = False  # 解決負號顯示問題
-    rcParams['font.sans-serif'] = ['Noto Sans CJK SC'] + rcParams['font.sans-serif'] # 其他備選字體
+    rcParams['font.sans-serif'] = [chinese_font.get_name()] + rcParams['font.sans-serif'] # 其他備選字體
 
     target_path, source_path, base_out_dir, dataset_index = Feature_Unsimilarity (out_dir, train_mode) # 特徵不相似度計算
     FeatureUnsimilarity_with_MSE (target_path, source_path, base_out_dir, dataset_index) # 特徵非相似程度與MSE改善程度

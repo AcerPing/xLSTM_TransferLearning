@@ -40,7 +40,7 @@ from utils.model import build_model, rmse, train_model
 from utils.data_io import read_data_from_dataset
 from utils.save import save_lr_curve, save_prediction_plot, save_yy_plot, save_mse, ResidualPlot, ErrorHistogram
 from utils.device import limit_gpu_memory # 限制 TensorFlow 對 GPU 記憶體的預留或使用量。
-# from Ensemble import start_ensemble # 整體學習 # ?? 需要修改  ImportError: cannot import name 'ReccurentPredictingGenerator' from 'utils.data_io'
+
 from reports.Record_args_while_training import Record_args_while_training # 紀錄訓練時的nb_batch、bsize、period
 from reports.Metrics_Comparison import metrics_comparison # 比較 Transfer-Learning遷移學習 vs. Without-Transfer-Learning不使用遷移學習
 from reports.output import MSE_Improvement, MAE_Improvement # 比較 Transfer-Learning遷移學習 vs. Without-Transfer-Learning不使用遷移學習
@@ -414,7 +414,6 @@ def main():
             val_loader = DataLoader(val_dataset, batch_size=bsize, shuffle=False, drop_last=False) 
             print(f'開始訓練model模型（{args["train_mode"]}）')
             Record_args_while_training(write_out_dir, args["train_mode"], target, args['nb_batch'], bsize, sequence_length, data_size=(len(y_train) + len(y_valid) + len(y_test)))
-            # H = model.fit_generator(RTG, validation_data=RVG, epochs=args["nb_epochs"], verbose=1, callbacks=callbacks) # 訓練模型
             model, train_loss, val_loss, optimizer = train_model(model, train_loader, val_loader, num_epochs=args["nb_epochs"], save_file_path=write_result_out_dir,
                                                     learning_rate=1e-4, device=device, early_stop_patience=10, monitor="val_loss")
             save_lr_curve(train_loss, val_loss, write_result_out_dir, target) # 繪製學習曲線
@@ -484,6 +483,8 @@ def main():
     
     elif args["train_mode"] == 'ensemble': # 使用ensemble整體學習。通過聚合、以平均的方式來得到最終預測結果
         
+        from Ensemble import start_ensemble # 整體學習 
+        
         for target in listdir('dataset/target'):    
             
             # make output directory
@@ -493,76 +494,24 @@ def main():
             # 將transfer-learning (Unfreeze)的模型複製搬移到ensemble底下的model資料夾
             source_dir = path.join(write_out_dir,'transfer-learning (Unfreeze)', target) # 獲取模型來源資料夾
             for TL_model in listdir(source_dir):
-                src_path = path.join(source_dir, TL_model, f'{TL_model}_transferred_best_model.hdf5')
+                src_path = path.join(source_dir, TL_model, f'best_model.pt')
                 if path.isfile(src_path): # 檢查是否是檔案再執行複製
-                    shutil.copy(src_path, TL_model_dir) # 複製檔案到目標資料夾（覆蓋既有檔案）
-                    print(f"已複製: {src_path} -> {TL_model_dir}")
+                    new_model_name = f"{TL_model}_best_model.pt" # 新的檔名為「來源名稱_best_model.pt」
+                    dest_path = path.join(TL_model_dir, new_model_name)
+                    shutil.copy(src_path, dest_path) # 複製檔案到目標資料夾（覆蓋既有檔案）
+                    print(f"已複製: {src_path} -> {dest_path}")
             print("模型複製完成。")
                     
             # ensemble整體學習 預測與評估。
             period = 1440 # period：表示時間步數（time steps），即模型一次看多少步的歷史數據來進行預測。下採樣後將資料降為成每分鐘一個數據點，以 1 天 = 1440 分鐘進行觀察。
             start_ensemble (period, write_out_dir=path.join(write_out_dir, args["train_mode"]))
-            keras.backend.clear_session() # 清理記憶體
+    
+            # clear memory up 清理記憶體
+            gc.collect() # 清理 CPU 記憶體
+            torch.cuda.empty_cache()  # 清空CUDA記憶體緩存
+    
             print('\n' * 2 + '-' * 140 + '\n' * 2)        
         
-
-    # elif args["train_mode"] == 'bagging': # 使用Bagging集成式學習。通過對數據集進行多次重抽樣，生成多個訓練子集，並在這些子集上訓練多個模型，最終通過聚合來提升預測穩定性。如隨機森林算法。
-    
-    #     for target in listdir('dataset/target'):
-            
-    #         # make output directory
-    #         write_result_out_dir = path.join(write_out_dir, args["train_mode"], target)
-    #         makedirs(write_result_out_dir, exist_ok=True)
-
-    #         # load dataset (加載數據集)
-    #         data_dir_path = path.join('dataset', 'target', target)
-    #         X_train, y_train, X_test, y_test = \
-    #             read_data_from_dataset(data_dir_path)
-    #         period = 1440 # period：表示時間步數（time steps），即模型一次看多少步的歷史數據來進行預測。下採樣後將資料降為成每分鐘一個數據點，以 1 天 = 1440 分鐘進行觀察。
-
-            # # make subsets (計算最佳區塊長度並生成訓練子集)
-            # b_star = optimal_block_length(y_train) # 計算最佳的區塊長度（b_star），然後使用該長度來生成適合時間依賴性的數據子集。
-            # b_star_cb = math.ceil(b_star[0].b_star_cb) # 向上取整，確保區塊長度為整數。
-            # print(f'optimal block length for circular bootstrap = {b_star_cb}')
-            # subsets_y_train = circular_block_bootstrap(y_train, block_length=b_star_cb,
-            #                                            replications=args["nb_subset"], replace=True) # 根據計算出的區塊長度，對 y_train 進行 nb_subset 次重抽樣，生成多個子集。
-            # subsets_X_train = []
-            # for i in range(X_train.shape[1]): # 對X_train的每個特徵使用相同的方法進行 Circular Block Bootstrap 重抽樣，生成多個 X_train 子集，並重新排列以匹配模型輸入格式。
-            #     np.random.seed(0) # 確保重現性
-            #     X_cb = circular_block_bootstrap(X_train[:, i], block_length=b_star_cb,
-            #                                     replications=args["nb_subset"], replace=True) # 對每個特徵資料進行重抽樣，生成多個子集，並將結果儲存到 subsets_X_train 列表中。
-            #     subsets_X_train.append(X_cb)
-            # # 1.) 對每個特徵進行重抽樣，因此len(subsets_X_train)長度為特徵數，而每個元素的形狀為(nb_subset, n_samples)。即 subsets_X_train 列表的結構是 [n_features個元素，每個元素的形狀是(nb_subset, n_samples)]。
-            # subsets_X_train = np.array(subsets_X_train) # 2.) 轉換為NumPy陣列，變成3D陣列，形狀為(n_features, nb_subset, n_samples)。
-            # subsets_X_train = subsets_X_train.transpose(1, 2, 0) # 3.) 使用transpose轉置方法調整其形狀，使其符合模型輸入的格式。形狀變為 (nb_subset子集數量, n_samples樣本數, n_features特徵數)
-
-            # # train the model for each subset (對每個子集訓練模型)
-            # model_dir = path.join(write_result_out_dir, 'model')
-            # makedirs(model_dir, exist_ok=True)
-            # for i_subset, (i_X_train, i_y_train) in enumerate(zip(subsets_X_train, subsets_y_train)): # 當對subsets_X_train進行迭代時，每次取出的i_X_train的形狀是(n_samples, n_features)
-                
-            #     print(f'i_X_train.shape, i_y_train.shape: {i_X_train.shape, i_y_train.shape}')
-                
-            #     i_X_train, i_X_valid, i_y_train, i_y_valid = \
-            #         train_test_split(i_X_train, i_y_train, test_size=args["valid_ratio"], shuffle=False) # 每個子集分成訓練集和驗證集。
-                
-            #     # construct the model (每個子集將會訓練一個模型，這些模型最終將被集合使用，以增加預測的穩定性和泛化能力。)
-            #     file_path = path.join(model_dir, f'{target}_best_model_{i_subset}.hdf5')
-            #     callbacks = make_callbacks(file_path, save_csv=False)
-            #     input_shape = (period, i_X_train.shape[1])  # subsets_X_train.shape[2] is number of variable，因此i_X_train.shape[1] 對應的是特徵數，即 n_features。
-            #     print(f'input_shape: {input_shape}')
-            #     model = build_model(input_shape, args["gpu"], write_result_out_dir, savefig=False)
-
-            #     # train the model
-            #     bsize = len(i_y_train) // args["nb_batch"]
-            #     RTG = ReccurentTrainingGenerator(i_X_train, i_y_train, batch_size=bsize, timesteps=period, delay=1) # 生成訓練數據，以批次形式提供給模型。
-            #     RVG = ReccurentTrainingGenerator(i_X_valid, i_y_valid, batch_size=bsize, timesteps=period, delay=1) # 生成驗證數據，以批次形式提供給模型。
-            #     Record_args_while_training(write_out_dir, args["train_mode"], target, args['nb_batch'], bsize, period, data_size=(len(y_train) + len(y_test)))
-            #     H = model.fit_generator(RTG, validation_data=RVG, epochs=args["nb_epochs"], verbose=1, callbacks=callbacks) # 訓練模型
-            
-            # keras.backend.clear_session() # 清理記憶體
-            # print('\n' * 2 + '-' * 140 + '\n' * 2)
-
     
     elif args["train_mode"] == 'noise-injection': # 添加隨機噪聲來訓練模型，使模型在訓練過程中遇到更多的數據變化，減少過擬合並提高模型對測試數據的泛化能力。
 
