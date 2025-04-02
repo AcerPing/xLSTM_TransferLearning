@@ -11,11 +11,11 @@
     "valid_ratio": 0.2,
     "freeze": false,
     "train_verbose": 1,
-    "MAE Loss": 1.1801430895992764,
-    "MSE Loss": 1.5040906293367198,
-    "RMSE Loss": 1.2264137268217117,
-    "MAPE Loss": 400.40180801422036,
-    "MSLE Loss": NaN,
-    "R2 Score": -56.22460713813478,
+    "MAE Loss": 0.30311938903578123,
+    "MSE Loss": 0.15270033343259629,
+    "RMSE Loss": 0.39076890028838823,
+    "MAPE Loss": 140.05789260246507,
+    "MSLE Loss": 0.05954762969648743,
+    "R2 Score": -4.809634353214424,
     "Learning Rate": 5e-05
 }
