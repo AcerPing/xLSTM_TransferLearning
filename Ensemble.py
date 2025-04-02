@@ -103,7 +103,12 @@ def ensemble (sequence_length, write_out_dir, target):
 
 
 def start_ensemble (sequence_length, write_out_dir):
-    folders = [f for f in os.listdir(write_out_dir) if os.path.isdir(os.path.join(write_out_dir, f))]
+    
+    folders = [f for f in os.listdir(write_out_dir) 
+               if os.path.isdir(os.path.join(write_out_dir, f)) and # 檢查是否為資料夾。
+                os.path.isdir(os.path.join(write_out_dir, f, 'model'))] # 檢查該資料夾底下是否有 model 子資料夾。
+    print(f'folders: {folders}')
+
     for target in folders:
         ensemble (sequence_length, write_out_dir, target)
         torch.cuda.empty_cache()

@@ -17,7 +17,9 @@ def metrics_comparison(out_dir, train_mode):
                   if path.isdir(path.join(source_relative_path, f)) and
                   path.exists(path.join(source_relative_path, f, "log.txt"))]
     target_relative_path = path.join(out_dir, 'transfer-learning (Unfreeze)') # TODO: 需要修改指定路徑!
-    target_dir = [f for f in listdir(target_relative_path) if path.isdir(path.join(target_relative_path, f))]
+    target_dir = [f for f in listdir(target_relative_path) 
+                  if path.isdir(path.join(target_relative_path, f)) and
+                  all(path.isfile(path.join(target_relative_path, f, source, "log.txt"))  for source in source_dir)]
     
     # 初始化結果表
     results = {
