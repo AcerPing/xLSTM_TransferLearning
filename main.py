@@ -35,6 +35,7 @@ torch.utils.cpp_extension.include_paths = include_paths_patched # 進行 Monkey 
 print("✅ Patched torch.utils.cpp_extension.include_paths successfully!")
 
 import xlstm  # 這行一定要放在 Monkey Patch 之後
+from torchview import draw_graph # 模型結構視覺化
 
 from utils.model import build_model, rmse, train_model
 from utils.data_io import read_data_from_dataset
@@ -66,7 +67,7 @@ def parse_arguments():
     # for training
     ap.add_argument('--train-mode', '-m', default='pre-train', type=str,
                     help='"pre-train", "transfer-learning", "without-transfer-learning", "comparison"\
-                            "ensemble", "bagging", "noise-injection", "score" (default : pre-train)') # 設定模式
+                            "ensemble", "bagging", "noise-injection", "draw-model-graph", "score" (default : pre-train)') # 設定模式
     ap.add_argument('--gpu', action='store_true',
                     help='whether to do calculations on gpu machines (default : False)') # 是否啟用GPU加速
     ap.add_argument('--nb-epochs', '-e', default=1, type=int,
@@ -565,6 +566,24 @@ def main():
     #         print('\n' * 2 + '-' * 140 + '\n' * 2)
 
 
+    elif args["train_mode"] == 'draw-model-graph':
+    # === 模型結構視覺化 ===
+        # make output directory
+        write_result_out_dir = path.join(write_out_dir, args["train_mode"])
+        makedirs(write_result_out_dir, exist_ok=True)
+
+        sequence_length = 1440 # period：表示時間步數（time steps），即模型一次看多少步的歷史數據來進行預測。下採樣後將資料降為成每分鐘一個數據點，以 1 天 = 1440 分鐘進行觀察。
+        input_dim = 5 # X_train.shape[1] → 取得資料集的特徵數
+        input_shape = (sequence_length, input_dim)  # 時序長度 1440、特徵數量 5
+        model, _ = build_model(input_shape=input_shape, gpu=False, verbose=False)
+
+        graph = draw_graph(model, input_size=(1, *input_shape), expand_nested=True,
+                    graph_name="xLSTMModel", roll=True, save_graph=True,
+                    directory=write_result_out_dir, filename="xLSTM_architecture")
+        
+        graph.visual_graph.render(format='png')  # 儲存成 PNG 檔
+        print(f"模型結構圖已儲存至: {os.path.join(write_result_out_dir, 'xLSTM_architecture.png')}")
+    
 
     else:
         print('No matchining train_mode')
