@@ -1,0 +1,115 @@
+{
+    "better-comments.tags": [
+        
+        {
+            "tag": "!",
+            "color": "#d9444a",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#f5c018",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": ">",
+            "color": "#fff",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "-",
+            "color": "#6D8CB4",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+    ],
+    "todo-tree.filtering.scopes": [
+
+    ],
+    "todo-tree.general.tags": ["-", "!", "?", ">", "TODO","FIXME"],
+    "todo-tree.highlights.customHighlight": {
+    "-": {
+        "background": "#222",
+        "foreground": "#6D8CB4",
+        "iconColour": "#6D8CB4",
+        "icon": "check",
+        "type": "text-and-comment",
+        "hideFromTree": true
+    },
+    "!": {
+        "background": "#222",
+        "foreground": "#d9444a",
+        "iconColour": "#d9444a",
+        "icon": "check",
+        "type": "text-and-comment",
+        "hideFromTree": true
+    },
+    "?": {
+        "background": "#222",
+        "foreground": "#f5c018",
+        "iconColour": "#f5c018",
+        "icon": "check",
+        "type": "text-and-comment",
+        "hideFromTree": true
+    },
+    ">": {
+        "background": "#222",
+        "foreground": "#fff",
+        "iconColour": "#fff",
+        "icon": "check",
+        "type": "text-and-comment",
+        "hideFromTree": true
+    },
+    "TODO": {
+        "background": "#f5c018",
+        "foreground": "#000",
+        "iconColour": "#f5c018",
+        "icon": "check",
+        "type": "text-and-comment"
+    },
+    "FIXME": {
+        "background": "#d9444a",
+        "foreground": "#000",
+        "iconColour": "#d9444a",
+        "type": "text-and-comment"
+    }
+    },
+    "todo-tree.general.statusBar": "tags",
+    "todo-tree.general.tagGroups": {},
+}
